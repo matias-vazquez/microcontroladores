@@ -31,9 +31,13 @@ void portsInit(void);
 
 ![Figure 1](img/fig01.png)
 
-7. Finally, write the FUNCTIOS section. Here, you must write all function definitions of all user-declared functions. You can use the flow diagram shown Figure 2 as a starting point for your code.
+7. Finally, write the FUNCTIONS section. Here, you must write all function definitions of all user-declared functions. You can use the flow diagram shown Figure 2 as a starting point for your code.
+
+![Figure 1](img/fig02.png)
 
 ### Hardware implementation
 1. Connect PortB of the PIC18 to the LED array of your minimum system. 
 2. Connect PortD of the PIC18 to the push-button array of your minimum system.
 3. Your connection setup must look like the one shown in Figure 3.
+
+![Figure 1](img/fig03.png)
