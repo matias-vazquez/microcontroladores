@@ -7,9 +7,9 @@ To become familiar with the basic instructions for configure and operate the mic
 
 ## Activities
 ### Software implementation
-    1 Create a new project in MPLAB X IDE for the Curiosity board (PIC18F45K50 uC).
-    2 Start your main C code with the LIBRARIEs / HEADERs section. Here, you will invoke all the required libraries and/or headers using the pre-processor directive #include.
-    3 Continue your C code with the DIRECTIVES section, where you will setup symbolic constants using the pre-processor directive #define, for example:
+1. Create a new project in MPLAB X IDE for the Curiosity board (PIC18F45K50 uC).
+2. Start your main C code with the LIBRARIEs / HEADERs section. Here, you will invoke all the required libraries and/or headers using the pre-processor directive #include.
+3. Continue your C code with the DIRECTIVES section, where you will setup symbolic constants using the pre-processor directive #define, for example:
 ```c
 #define _XTAL_FREQ 1000000
 ``` 
