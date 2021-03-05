@@ -8,6 +8,7 @@ To become familiar with the basic instructions for configure and operate the mic
 ## Activities
 ### Software implementation
 1. Create a new project in MPLAB X IDE for the Curiosity board (PIC18F45K50 uC).
+
 2. Start your main C code with the LIBRARIEs / HEADERs section. Here, you will invoke all the required libraries and/or headers using the pre-processor directive #include.
 3. Continue your C code with the DIRECTIVES section, where you will setup symbolic constants using the pre-processor directive #define, for example:
 ```c
@@ -25,3 +26,8 @@ void portsInit(void);
     -  E.g. suppose that LED_4 turns on and the player presses in time button_4, thus you must indicate the match by displaying on the LED array the Knight Rider effect (https://www.youtube.com/watch?v=mjpc1P1vPZQ). A flow diagram of the Whack-a-Mole code is shown in Figure 1.  
 
 7. Finally, write the FUNCTIOS section. Here, you must write all function definitions of all user-declared functions. You can use the flow diagram shown Figure 2 as a starting point for your code.
+
+###Hardware implementation
+1. Connect PortB of the PIC18 to the LED array of your minimum system. 
+2. Connect PortD of the PIC18 to the push-button array of your minimum system.
+3. Your connection setup must look like the one shown in Figure 3.
