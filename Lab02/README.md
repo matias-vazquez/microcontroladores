@@ -29,7 +29,9 @@ void portsInit(void);
 6. It is time for the MAIN section. In your C code, the main function drives the LEDs of your minimum system card to represent that a toy mole has shown up, in a continuous and random fashion, by turning on one LED out of the 8-LED set. To emulate the use of the mallet to hit the toy moles, the player will push one push-button of the minimum system card, so the firmware must be able to read the button’s state. 
     -  E.g. suppose that LED_4 turns on and the player presses in time button_4, thus you must indicate the match by displaying on the LED array the Knight Rider effect (https://www.youtube.com/watch?v=mjpc1P1vPZQ). A flow diagram of the Whack-a-Mole code is shown in Figure 1.
 
-![Figure 1](img/fig01.png)
+<p align="center">
+  <img src="https://github.com/matias-vazquez/microcontroladores/blob/main/Lab02/img/fig01.png">
+</p>
 
 7. Finally, write the FUNCTIONS section. Here, you must write all function definitions of all user-declared functions. You can use the flow diagram shown Figure 2 as a starting point for your code.
 
