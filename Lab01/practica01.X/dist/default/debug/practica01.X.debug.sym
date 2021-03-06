@@ -171,7 +171,7 @@ cinit 7F96 7F9B CODE 7F96 0
 %locals
 dist/default/debug\practica01.X.debug.o
 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
-C:\Users\Labmems\AppData\Local\Temp\s15n4.s
+C:\Users\Labmems\AppData\Local\Temp\s1m40.s
 589 7F96 0 CODE 0
 591 7F96 0 CODE 0
 594 7F96 0 CODE 0
@@ -196,4 +196,4 @@ main.c
 42 7FA4 0 CODE 0
 43 7FA6 0 CODE 0
 44 7FAA 0 CODE 0
-45 7FAC 0 CODE 0
+46 7FAC 0 CODE 0

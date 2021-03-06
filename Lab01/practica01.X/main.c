@@ -42,4 +42,5 @@ void portsInit( void ){
     TRISAbits.TRISA7 = output;              // RA7 as output
     ANSELB = digital;                       // Set Port B as digital port
     TRISBbits.TRISB4 = input;               // Set RB4 as input
+
 }

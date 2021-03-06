@@ -13,7 +13,7 @@ Proteus is a Integrated Development Environment capable of capturing schematic d
 Your minimal system will include input and output hardware components, such as LEDs, push buttons, a keypad, and so on, which will be connected to the I/O ports of the PIC18 &mu;C for you to interact with the &mu;C through wired connections. The comprehensive list of componets of your minimal system board is shown below:
 
 | Component | Quantity |
-| --------- | -------- |
+| --------- | :------: |
 | LEDs          | 8           |
 | Push buttons  | 8	      |
 | 4x4 keypad    | 1	      |

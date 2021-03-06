@@ -8119,4 +8119,5 @@ void portsInit( void ){
     TRISAbits.TRISA7 = output;
     ANSELB = digital;
     TRISBbits.TRISB4 = input;
+
 }

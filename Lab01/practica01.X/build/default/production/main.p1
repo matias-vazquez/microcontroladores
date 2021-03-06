@@ -870,7 +870,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;main.c: 44:     TRISBbits.TRISB4 = input;
 [e = . . _TRISBbits 0 4 -> . `E4813 1 `uc ]
-"45
-[; ;main.c: 45: }
+"46
+[; ;main.c: 46: }
 [e :UE 642 ]
 }
