@@ -26,7 +26,7 @@ MPLAB X Integrated Development Environment (IDE) is an expandable, highly config
 4. Selecct the PIC18F45K50 device and Click on Next.
 5. Choose the Curiosity option and Click on Next
 6. Choose the XC8 Compiler Toolchain to build the program ans Click on Next.
-   * If the XC8 Compiler is not installed, go to ... to download and install it.
+   * If the XC8 Compiler is not installed, go to https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers to download and install it.
 7. Select the Project Location and Project Name. Make sure that the location and the name have no special characters and no spaces in the names of the directories or filenames. Then Click on Finish.
 8. Right-Click on Source Files and open a new main.c file. and Click on Finish.
 9. Your code must be like the one showed in the figure 16, appended  at the end of the document.
