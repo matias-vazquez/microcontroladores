@@ -23,29 +23,20 @@ Potentiometer 10KΩ | 2
 Power supply connector | 1
 Female 8-pin header | 6
 Female 3-pin header | 1
+Male-to-male dupont cables | 40
 6"×8" single copper layer board | 1
 
 </div>
 
 ## Pre-lab Work
-1. Install Proteus 8.11 using Tec de Monterrey's student license freely available following the intructions available [here](http://bit.ly/proteustec).
+* Install Proteus 8.11 using Tec de Monterrey's student license freely available. Follow the intructions available at [http://bit.ly/proteustec](http://bit.ly/proteustec). 
+* _**To access the licenses server and launch Proteus 8.11, you must be connected to TEC's VPN**_. 
 
 ## Lab Work
-Proteus is a Integrated Development Environment capable of capturing schematic diagrams, running SPICE (electrical) simulations, &mu;C firmware testing and PCB design. Use Proteus to develop the schematics of your minimum system, to, then, lay out the PCB and finally obtain the Gerber files, which are used by manufacturers to fabricate the physical boards for you.
+Proteus is a Integrated Development Environment capable of capturing schematic diagrams, running SPICE simulations, &mu;C firmware testing and PCB layout. Use Proteus to develop the schematics of your expansion card, to, then, lay out the PCB and finally obtain the Gerber files, which are used by manufacturers to fabricate the physical boards for you.
 
-Your minimal system will include input and output hardware components, such as LEDs, push buttons, a keypad, and so on, which will be connected to the I/O ports of the PIC18 &mu;C for you to interact with the &mu;C through wired connections. The comprehensive list of componets of your minimal system board is shown below:
+Each peripherals on your board will have available port connections for you to manually wire up to a desired PIC18 &mu;C port, or to any other controlling device such as Arduino, Raspberry Pi or FPGA development board. 
 
-| Component | Quantity |
-| --------- | :------: |
-| LEDs          | 8           |
-| Push buttons  | 8	      |
-| 4x4 keypad    | 1	      |
-| LCD display   | 1	      |
-| LM35		| 1	      |
-| R 470		| 8	      |
-| R 1K		| 8	      |
-| R 4K7		| 8	      |
-| POT 10K	| 2	      |
 
 
 
