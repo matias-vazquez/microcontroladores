@@ -1,11 +1,14 @@
 # Expansion Card Development (part I: Schematics)
 
+## Objectives
+Learn by practice the development process of a medium-sized, single layer, through-hole mounted printed circuit board using state-of-the-art software.
+
 ## Introduction 
-In this lab series of two, we will design the Printed Circuit Board (PCB) of an expansion card to use along with the Curiosity board to expand its hardware interface and make easier to interact with the PIC18F45K50 &mu;C. This process is divided in two parts: part I comprises the circuit schematic, and part II corresponds to the PCB layout and GERBER files generation. Board fabrication will be carried out using laser etching machinery in campus by trained personnel. Alongside the power connectors, and pull-up and current-limiting resistors, the expansion card includes the following elements:
+In this lab series of two, we will design the Printed Circuit Board (PCB) of an expansion card to use along with the Curiosity board to expand its hardware interface and make easier to interact with the PIC18F45K50 &mu;C. This process is divided in two parts: part I comprises the circuit schematic, and part II corresponds to the PCB layout and GERBER files generation. Board fabrication will be carried out using laser etching machinery in campus by trained personnel. The expansion card includes the following elements (links to datasheets of relevant components available on table):
 
 <div align="center">
 
-Device | Quantity
+Component | Quantity
 :---   | :---:
 [16×2 liquid crystal display](https://www.sparkfun.com/datasheets/LCD/HD44780.pdf) | 1
 [4×4 membrane keypad](https://circuitdigest.com/microcontroller-projects/4x4-keypad-interfacing-with-pic16f877a)         | 1
@@ -13,15 +16,20 @@ Device | Quantity
 [Common-cathode 7-segment displays](https://components101.com/displays/7-segment-display-pinout-working-datasheet)          | 4
 Push-buttons                | 8
 LEDs                        | 8
+Resistor 4.7KΩ | 8
+Resistor 1KΩ   | 12
+Resistor 330Ω  | 12
+Potentiometer 10KΩ | 2
+Two-terminal power supply connector | 1
+Female 8-terminal pin header | 6
+Female 3-terminal pin header | 1
 
 </div>
-
-## Objectives
-* Learn by practice the development process of a medium-sized, single layer, through-hole mounted printed circuit board using state-of-the-art software.
+To layout the expansion card, a 6"×8" single copper layer board will be used. The full list of materials for the PCB mounting will be generated at the end of part II.
 
 ## Pre-lab Work
-1. You have the choice to Install Proteus 8.11 using Tec de Monterrey's student licence freely available, or use the remote Work Station you have previously assigned, which has Proteus 8.11 already installed.
-2. Create an account
+1. You have the choice to Install Proteus 8.11 using Tec de Monterrey's student license freely available, or use the remote Work Station you have previously assigned, which has Proteus 8.11 already installed.
+   * In case you want to install the software in your personal computer, follow intructions [here](http://bit.ly/proteustec).
 
 ## Lab Work
 Proteus is a Integrated Development Environment capable of capturing schematic diagrams, running SPICE (electrical) simulations, &mu;C firmware testing and PCB design. Use Proteus to develop the schematics of your minimum system, to, then, lay out the PCB and finally obtain the Gerber files, which are used by manufacturers to fabricate the physical boards for you.
