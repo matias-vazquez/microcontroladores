@@ -34,7 +34,7 @@ Male-to-male dupont cables | 40 | ---
 </div>
 
 ## Pre-lab 
-* Install Proteus 8.11 using Tec de Monterrey's student license (available for free). Follow the intructions available at <a href="http://bit.ly/proteustec">http://bit.ly/proteustec</a>. 
+* Install Proteus 8.11 using Tec de Monterrey's student license (free to students). Follow the intructions available at <a href="http://bit.ly/proteustec">http://bit.ly/proteustec</a>. 
 * _**To access the licenses server and launch Proteus 8.11, you must be connected to TEC's VPN**_. 
 
 ## Lab work
@@ -42,7 +42,7 @@ Proteus is an Integrated Development Environment (IDE) capable of capturing sche
 
 Each peripheral on your board will have available port connections for you to manually wire up to a PIC18 &mu;C port, or to any other controlling device such as Arduino, Raspberry Pi or FPGA. 
 
-### **Project setup**
+### **1. Project setup**
 1. Open __Proteus 8 Professional__. 
    * The figure below shows the Proteus home page. From the __*Start*__ window, select __*New Project*__. 
 <p align="center">
@@ -99,19 +99,19 @@ Each peripheral on your board will have available port connections for you to ma
   <img src="img/summary.PNG">
 </p>
 
-### **Schematic Capture**
+### **2. Schematic Capture**
 
 The schematic diagram of the expansion board is shown below. A high-resolution PDF is also available [here](EXBOARD-PIC18.PDF). 
 <p align="center">
   <img src="img/schematic_diagram.png">
 </p>
 
-1. A blank workspace will be initially shown for two different tab windows: __*Schematic Capture*__ and __*PCB Layout*__. Start by capturing the schematics of the board.
+1. A blank workspace will be initially shown for two different tab windows: __*Schematic Capture*__ and __*PCB Layout*__. Click on the __*Schematic Capture*__ tab to open the correspoding workspace (gray background).
 <p align="center">
   <img src="img/sch_cap_01.PNG">
 </p>
 
-2. It is good practice to add the full list of components first, and then wire them up. To add the component list to your workspace, open the component library: __*Library → Pick Parts [P]*__.
+2. It is good practice to add the full list of components first, and then wire them up. To add the component list to your workspace, open the component library: __*Library → Pick Parts*__ (or press **P** on your keyboard).
 <p align="center">
   <img src="img/sch_cap_02.PNG">
 </p>
