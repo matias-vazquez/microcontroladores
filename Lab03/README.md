@@ -46,7 +46,7 @@ Each peripherals on your board will have available port connections for you to m
 1. Open Proteus 8 Professional. 
    * The figure below shows the Proteus home page. From the __*Start*__ window, select __*New Project*__. 
 <p align="center">
-  <img src="img/home_page.png">
+  <img src="img/home_page.PNG">
 
 2. From the __*New Project Wizard*__, choose a project name and path. Check the *New Project* option and click *Next*. 
 </p>
