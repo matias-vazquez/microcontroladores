@@ -1,4 +1,4 @@
-# [DRAFT] Expansion Board Fabrication (Part I: Schematic Capture)
+# Expansion Board Fabrication (Part I: Schematic Capture)
 
 ## Objectives
 Learn by practice the development process of a medium-sized, single layer, through-hole mounted printed circuit board using state-of-the-art software Proteus 8.11.
@@ -111,7 +111,7 @@ Each peripherals on your board will have available port connections for you to m
   <img src="img/sch_cap_01.PNG">
 </p>
 
-2. It is good practice to add the full list of components first, and then capture the schematics. To add the component list of your design, open the component library: *Library → Pick Parts* [P].
+2. It is good practice to add the full list of components first, and then wire them up. To add the component list to your workspace, open the component library: __*Library → Pick Parts*__ [P].
 <p align="center">
   <img src="img/sch_cap_02.PNG">
 </p>
@@ -126,9 +126,9 @@ Use the __*Keywords*__ field to lookup for components. Double click on the desir
   <img src="img/sch_cap_04.PNG">
 </p>
 
-4. Make all the necessary connections to complete the schematic. Once you're done, name the power rails (+5V and GND) by double-clicking the __*POWER*__ and __*GROUND*__ terminals. 
+4. Make all the necessary connections to complete the schematic. Once you're done, name the power rails (VCC and GND) by double-clicking the __*POWER*__ and __*GROUND*__ terminals. 
 <p align="center">
   <img src="img/sch_cap_05.PNG">
 </p>
 
-5. Once you finish the schematic capture, your design is ready for PCB layout. Save your project and continue to Part II. PCB Layout.
+5. Once you finish the schematic capture, your design is ready for PCB layout, since no simulations are required. Save your project and export the schematic diagram as a image or PDF file to include in your report: __*File → Export Graphics*__ [P]. You can now continue to Part II: PCB Layout.
