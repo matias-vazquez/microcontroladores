@@ -100,18 +100,35 @@ Each peripherals on your board will have available port connections for you to m
 </p>
 
 12. The schematic diagram of the expansion board is shonw below. A high-resolution PDF is also available [here](EXBOARD-PIC18.PDF). 
-
 <p align="center">
   <img width=900 src="img/schematic_diagram.png">
 </p>
 
+### **Schematic Capture**
 
+1. A blank workspace will be initially shown for two different tab windows: __*Schematic Capture*__ and __*PCB Layout*__. Start by capturing the schematics of the board.
+<p align="center">
+  <img src="img/sch_cap_01.PNG">
+</p>
 
-1. To add component list of your design, open the component library: *Library → Pick Parts* [P].
-*Hint*. *System → Keyboard mapping*.
-### Design Rules
-Copper thickness = 35&mu;m
+2. It is good practice to add the full list of components first, and then capture the schematics. To add the component list of your design, open the component library: *Library → Pick Parts* [P].
+<p align="center">
+  <img src="img/sch_cap_02.PNG">
+</p>
 
+Use the __*Keywords*__ field to lookup for components. Double click on the desired component to add it to the component list (shown on the left side of the screen). Your list should look similar to the one below:
+<p align="center">
+  <img src="img/sch_cap_03.PNG">
+</p>
 
+3. On the leftmost panel, select the __*Terminals Mode*__ button to show the available terminals. Use __*POWER*__ to connect the VCC lines, and __*GROUND*__ for Ground reference.
+<p align="center">
+  <img src="img/sch_cap_04.PNG">
+</p>
 
+4. Make all the necessary connections to complete the schematic. Once you're done, name the power rails (+5V and GND) by double-clicking the __*POWER*__ and __*GROUND*__ terminals. 
+<p align="center">
+  <img src="img/sch_cap_05.PNG">
+</p>
 
+5. Once you finish the schematic capture, your design is ready for PCB layout. Save your project and continue to Part II. PCB Layout.
