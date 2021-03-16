@@ -99,7 +99,7 @@ Each peripherals on your board will have available port connections for you to m
   <img src="img/summary.PNG">
 </p>
 
-12. The schematic diagram of the expansion board is shonw below. A high-resolution PDF is also available [here](EXBOARD-PIC18.pdf). 
+12. The schematic diagram of the expansion board is shonw below. A high-resolution PDF is also available [here](EXBOARD-PIC18.PDF). 
 
 <p align="center">
   <img width=900 src="img/schematic_diagram.png">
