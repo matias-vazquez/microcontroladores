@@ -51,52 +51,52 @@ Each peripherals on your board will have available port connections for you to m
 2. From the __*New Project Wizard*__, choose a project name and path. Check the *New Project* option and click *Next*. 
 </p>
 <p align="center">
-  <img src="img/Start.png">
+  <img src="img/Start.PNG">
 </p>
 
 3. Before designing the PCB, we need to create the circuit schematic. For this, select __*Create a schematic from the selected template*__, and use the template __Landscape A4__.
 <p align="center">
-  <img src="img/schematic_design.png">
+  <img src="img/schematic_design.PNG">
 </p>
 
 4. Then, check the __*Create a PCB layout from the selected template*__, and use the __DEFAULT__ template. This way, we will start out from a clean template an will be able to setup our PCB design according to our requirements. 
 <p align="center">
-  <img src="img/PCB_layout.png">
+  <img src="img/PCB_layout.PNG">
 </p>
 
 5. On the __*PCB Layer Stackup*__ window we will select the number of conductive layers we need for our design. Initially, a two-layer setup will be presented, which includes a core layer of FR4 material (fire retardant), two Copper layers (Bottom and Top) for signal routing, and two Resist (protective) layers. We need to change this setup to a single layer board.
 <p align="center">
-  <img src="img/stackup_2l.png">
+  <img src="img/stackup_2l.PNG">
 </p>
 
 6. Click on __*Stackup Wizard*__ button and select __*1*__ on __*No. of Copper Layers*__. Left the rest of parameters unchanged and click __*Ok*__.
 <p align="center">
-  <img src="img/stackup_wizard.png">
+  <img src="img/stackup_wizard.PNG">
 </p>
 
 7. The PCB layer stackup should now include only one Copper layer (Bottom), along with the core and resist layers, as shown below:
 <p align="center">
-  <img src="img/stackup.png">
+  <img src="img/stackup.PNG">
 </p>
 
 8. There are different types of vias than can be used in a PCB, such as through hole, blind via, buried via and microvia. In our design since we are using a single conductive layer, only through holes can be fabricated. Notice that column __*Type*__ already shows this type of via. 
 <p align="center">
-  <img src="img/drill_pairs.png">
+  <img src="img/drill_pairs.PNG">
 </p>
 
 9. A preview of the board (transversal cut) is the shown for you to review the PCB setup. As expected, he through hole via runs from top to bottom of the board. These vias are the mounting sites for all our components. The final board thickness is 1.6 mm (Core) + 35 &mu;m (Cu layer).
 <p align="center">
-  <img src="img/board_preview.png">
+  <img src="img/board_preview.PNG">
 </p>
 
 10. Since we are not writing firmware for any microcontroller (yet), leave __*No Firmware Project*__ checked.
 <p align="center">
-  <img src="img/firmware.png">
+  <img src="img/firmware.PNG">
 </p>
 
 11. Finally, a summary of the project setup is presented for you to review. Double check that __*Schematic*__ and __*Layout*__ are selected and finish the setup. 
 <p align="center">
-  <img src="img/summary.png">
+  <img src="img/summary.PNG">
 </p>
 
 12. The schematic diagram of the expansion board is shonw below. A high-resolution PDF is also available [here](EXBOARD-PIC18.pdf). 
