@@ -47,9 +47,9 @@ Each peripheral on your board will have available port connections for you to ma
    * The figure below shows the Proteus home page. From the __*Start*__ window, select __*New Project*__. 
 <p align="center">
   <img src="img/home_page.PNG">
+</p>
 
 2. From the __*New Project Wizard*__, choose a project name and path. Check the __*New Project*__ option and click __*Next*__. 
-</p>
 <p align="center">
   <img src="img/Start.PNG">
 </p>
@@ -120,6 +120,8 @@ Use the __*Keywords*__ field to look up for components. Double click on the desi
 <p align="center">
   <img src="img/sch_cap_03.PNG">
 </p>
+
+__Note: when after adding the push buttons, right-click on each of them, choose *Edit Properties* and name them all on *Part Reference* field. Use a logic sequence to identify these components (e.g. PB1, PB2, PB3...).__
 
 3. On the leftmost panel, select the __*Terminals Mode*__ button to show the available terminals. Use __*POWER*__ to connect the VCC lines, and __*GROUND*__ for Ground reference.
 <p align="center">
