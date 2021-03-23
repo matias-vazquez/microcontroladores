@@ -36,9 +36,13 @@ The final schematic should look similar to the one shown below:
 
 10. Click on _**Add/Edit**_ button and on the pop-up window, click _**Add**_ again. On the _**Keywords**_ field. search for __LED__, and under _**Miscellaneous**_ category, select the following device and click _Ok_:
 
+<div align="center">
+
 Device | Library | Description
 :---: | :---: | :---:
 LED | PACKAGE | Light Emitting Diode, 100th pitch, A-K pinout
+
+</div>
 
 11. Once added to the component, assing the corresponding pins to the Anode and Cathode using an A and a K, respectively, as shown below (package pads should color white if done correctly):
 <p align="center">
