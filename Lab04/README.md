@@ -146,4 +146,12 @@ Blank areas will be filled out with the copper layer, which is connected to the 
 
 ## Report
 
-The generated ZIP file contains all the Gerber files required for the board fabrication. Upload to Github/Drive this ZIP file and share the download link. 
+The generated ZIP file contains all the Gerber files required for the board fabrication. **It is important to upload to Github this ZIP file and share the download link**.
+
+The technical report must include
+
+1. Introduction with a brief explanation of the work done in this lab
+2. Link to GitHub repository with your Proteus project files, as well as the final Gerber files for fabrication
+3. Link to demonstration video
+4. In-deep explanation of the developing process (schematic capture and PCB layout), including screenshots of relevant process steps.
+5. Individual conclusions.
