@@ -42,7 +42,7 @@ LED | PACKAGE | Light Emitting Diode, 100th pitch, A-K pinout
 
 11. Once added to the component, assing the corresponding pins to the Anode and Cathode using an A and a K, respectively, as shown below (package pads should color white if done correctly):
 <p align="center">
-  <img src="img/LED_package.png">
+  <img src="img/LED_package.PNG">
 </p>
 
 12. Click _**Assign Package(s)**_ to close the pop-up windown, and click _Next_ three times and finally _Ok_ to complete the process. All the LEDs on your design should update with the PCB package automatically. 
@@ -57,14 +57,14 @@ LED | PACKAGE | Light Emitting Diode, 100th pitch, A-K pinout
 
 16. Starting off with the potentiometer, the commonly-available devices have three pins, 30 mils wide, and separated by 200 mils. We will use three 70 mils-wide pads with inner 30 mils holes to place the pot pins. From the toolbar to the left of the _**PCB Layout**_ window, click the _**Round Through-hole Pad Mode**_ and select _**C-70-30**_ and place a pad on coordinate X=0, Y=0. Then, move the cursor four position to the right (X=200 and Y=0), and place a second pad. Finally, place a third pad on X=400, Y=0. Figure below shows the three laid down 60-30 pads.
 <p align="center">
-  <img width="300" src="img/POT_01.png">
+  <img width="300" src="img/POT_01.PNG">
 </p>
 
 17. Select the _**2D Graphics Box Mode**_ and then select the _**Top Silk**_ layer from the PCB layers drop-down menu at the bottom of the screen. We will use this layer to draw the boundaries of the potentiometer to avoid overlapping with other components. 
 
 18. Draw a 640 width x 300 height rectangle (you need to switch to a finer grid to allow 5 mils steps. For this, press F2 or _**View → Snap 5th**_). Draw a second rectangle, this time 260 width x 650 height. Place the rectangles to form the outline of the potentiometer. Consider that the top border of the first rectangle is placed 100 mils above the midline of the three pads. As a reference see the figure below:
 <p align="center">
-  <img width="300" src="img/POT_02.png">
+  <img width="300" src="img/POT_02.PNG">
 </p>
 
 19. Double-click on the leftmost pad and on the _**Number**_ box, assign _**1**_. Finish up assigning _**2**_ and _**3**_ to the following pads from left to right, respectively. Once assigned, you should see the number over the corresponding pad. 
