@@ -45,5 +45,5 @@ void portsInit(void);
 3. Your connection setup must look like the one shown in Figure 3.
 
 <p align="center">
-  <img src="img/schematic.PNG">
+  <img src="img/schematic.png">
 </p>
