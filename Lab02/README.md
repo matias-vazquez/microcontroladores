@@ -30,13 +30,13 @@ void portsInit(void);
     -  E.g. suppose that LED_4 turns on and the player presses in time button_4, thus you must indicate the match by displaying on the LED array the Knight Rider effect (https://www.youtube.com/watch?v=mjpc1P1vPZQ). A flow diagram of the Whack-a-Mole code is shown in Figure 1.
 
 <p align="center">
-  <img src="https://github.com/matias-vazquez/microcontroladores/blob/main/Lab02/img/fig01.png">
+  <img src="img/fig01.png">
 </p>
 
 7. Finally, write the FUNCTIONS section. Here, you must write all function definitions of all user-declared functions. You can use the flow diagram shown Figure 2 as a starting point for your code.
 
 <p align="center">
-  <img src="https://github.com/matias-vazquez/microcontroladores/blob/main/Lab02/img/fig02.png">
+  <img src="img/fig02.png">
 </p>
 
 ### Hardware implementation
@@ -45,5 +45,5 @@ void portsInit(void);
 3. Your connection setup must look like the one shown in Figure 3.
 
 <p align="center">
-  <img src="https://github.com/matias-vazquez/microcontroladores/blob/main/Lab02/img/fig03.png">
+  <img src="img/schematic.PNG">
 </p>
