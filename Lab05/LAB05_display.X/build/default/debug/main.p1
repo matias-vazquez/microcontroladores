@@ -1,18 +1,18 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"24 main.c
-[; ;main.c: 24: void portsInit(void);
+"20 main.c
+[; ;main.c: 20: void portsInit(void);
 [v _portsInit `(v ~T0 @X0 0 ef ]
-"26
-[; ;main.c: 26: void send_to_disp(uint32_t);
+"22
+[; ;main.c: 22: void send_to_disp(uint32_t);
 [v _send_to_disp `(v ~T0 @X0 0 ef1`ul ]
 "232 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 232: extern volatile unsigned char ANSELA __attribute__((address(0xF5B)));
 [v _ANSELA `Vuc ~T0 @X0 0 e@3931 ]
-"39 main.c
-[; ;main.c: 39:     ANSELA = digital;
-[c E5272 0 1 .. ]
-[n E5272 por_ACDC digital analog  ]
+"35 main.c
+[; ;main.c: 35:     ANSELA = digital;
+[c E5269 0 1 .. ]
+[n E5269 por_ACDC digital analog  ]
 "4626 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4626: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
 [v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
@@ -41,8 +41,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4105
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4105: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
 [v _LATD `Vuc ~T0 @X0 0 e@3980 ]
-"25 main.c
-[; ;main.c: 25: uint8_t char_to_seg(uint8_t);
+"21 main.c
+[; ;main.c: 21: uint8_t char_to_seg(uint8_t);
 [v _char_to_seg `(uc ~T0 @X0 0 ef1`uc ]
 [v F4805 `(v ~T0 @X0 1 tf1`ul ]
 "203 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
@@ -755,76 +755,76 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13651: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"29 main.c
-[; ;main.c: 29: void main(void){
+"25 main.c
+[; ;main.c: 25: void main(void){
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"30
-[; ;main.c: 30:     portsInit();
+"26
+[; ;main.c: 26:     portsInit();
 [e ( _portsInit ..  ]
-"31
-[; ;main.c: 31:     while(1){
+"27
+[; ;main.c: 27:     while(1){
 [e :U 638 ]
 {
-"32
-[; ;main.c: 32:         uint32_t num = 0x08070605;
+"28
+[; ;main.c: 28:         uint32_t num = 0x08070605;
 [v _num `ul ~T0 @X0 1 a ]
 [e = _num -> -> 134678021 `l `ul ]
-"33
-[; ;main.c: 33:         send_to_disp(num);
+"29
+[; ;main.c: 29:         send_to_disp(num);
 [e ( _send_to_disp (1 _num ]
-"34
-[; ;main.c: 34:     }
+"30
+[; ;main.c: 30:     }
 }
 [e :U 637 ]
 [e $U 638  ]
 [e :U 639 ]
-"35
-[; ;main.c: 35: }
+"31
+[; ;main.c: 31: }
 [e :UE 636 ]
 }
-"38
-[; ;main.c: 38: void portsInit(void){
+"34
+[; ;main.c: 34: void portsInit(void){
 [v _portsInit `(v ~T0 @X0 1 ef ]
 {
 [e :U _portsInit ]
 [f ]
-"39
-[; ;main.c: 39:     ANSELA = digital;
-[e = _ANSELA -> . `E5272 0 `uc ]
-"40
-[; ;main.c: 40:     TRISA = 0x0F;
+"35
+[; ;main.c: 35:     ANSELA = digital;
+[e = _ANSELA -> . `E5269 0 `uc ]
+"36
+[; ;main.c: 36:     TRISA = 0x0F;
 [e = _TRISA -> -> 15 `i `uc ]
-"41
-[; ;main.c: 41:     ANSELB = digital;
-[e = _ANSELB -> . `E5272 0 `uc ]
-"42
-[; ;main.c: 42:     TRISB = 0x00;
+"37
+[; ;main.c: 37:     ANSELB = digital;
+[e = _ANSELB -> . `E5269 0 `uc ]
+"38
+[; ;main.c: 38:     TRISB = 0x00;
 [e = _TRISB -> -> 0 `i `uc ]
-"43
-[; ;main.c: 43:     ANSELD = digital;
-[e = _ANSELD -> . `E5272 0 `uc ]
-"44
-[; ;main.c: 44:     TRISD = 0x00;
+"39
+[; ;main.c: 39:     ANSELD = digital;
+[e = _ANSELD -> . `E5269 0 `uc ]
+"40
+[; ;main.c: 40:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"45
-[; ;main.c: 45:     OSCCON = 0b01110100;
+"41
+[; ;main.c: 41:     OSCCON = 0b01110100;
 [e = _OSCCON -> -> 116 `i `uc ]
-"46
-[; ;main.c: 46: }
+"42
+[; ;main.c: 42: }
 [e :UE 640 ]
 }
-"48
-[; ;main.c: 48: void send_to_disp(uint32_t disp_word){
+"44
+[; ;main.c: 44: void send_to_disp(uint32_t disp_word){
 [v _send_to_disp `(v ~T0 @X0 1 ef1`ul ]
 {
 [e :U _send_to_disp ]
 [v _disp_word `ul ~T0 @X0 1 r1 ]
 [f ]
-"49
-[; ;main.c: 49:     for (char i = 0; i < 4; i++){
+"45
+[; ;main.c: 45:     for (char i = 0; i < 4; i++){
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -832,134 +832,134 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 643  ]
 [e :U 642 ]
 {
-"50
-[; ;main.c: 50:         int internal_sweep = (int) powf(2,i);
+"46
+[; ;main.c: 46:         int internal_sweep = (int) powf(2,i);
 [v _internal_sweep `i ~T0 @X0 1 a ]
 [e = _internal_sweep -> ( _powf (2 , -> -> 2 `i `f -> _i `f `i ]
-"51
-[; ;main.c: 51:         int sweep = 0x0F & ~internal_sweep;
+"47
+[; ;main.c: 47:         int sweep = 0x0F & ~internal_sweep;
 [v _sweep `i ~T0 @X0 1 a ]
 [e = _sweep & -> 15 `i ~ _internal_sweep ]
-"52
-[; ;main.c: 52:         LATB = (char) sweep;
+"48
+[; ;main.c: 48:         LATB = (char) sweep;
 [e = _LATB -> -> _sweep `uc `uc ]
-"53
-[; ;main.c: 53:         uint8_t num_disp = 0x000000FF & (disp_word >> i*8);
+"49
+[; ;main.c: 49:         uint8_t num_disp = 0x000000FF & (disp_word >> i*8);
 [v _num_disp `uc ~T0 @X0 1 a ]
 [e = _num_disp -> & -> -> -> 255 `i `l `ul >> _disp_word * -> _i `i -> 8 `i `uc ]
-"54
-[; ;main.c: 54:         LATD = char_to_seg(num_disp);
+"50
+[; ;main.c: 50:         LATD = char_to_seg(num_disp);
 [e = _LATD ( _char_to_seg (1 _num_disp ]
-"55
-[; ;main.c: 55:         _delay((unsigned long)((30)*(8000000/4000.0)));
+"51
+[; ;main.c: 51:         _delay((unsigned long)((30)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"56
-[; ;main.c: 56:     }
+"52
+[; ;main.c: 52:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 4 `i 642  ]
 [e :U 643 ]
 }
-"57
-[; ;main.c: 57: }
+"53
+[; ;main.c: 53: }
 [e :UE 641 ]
 }
-"59
-[; ;main.c: 59: uint8_t char_to_seg(uint8_t num){
+"55
+[; ;main.c: 55: uint8_t char_to_seg(uint8_t num){
 [v _char_to_seg `(uc ~T0 @X0 1 ef1`uc ]
 {
 [e :U _char_to_seg ]
 [v _num `uc ~T0 @X0 1 r1 ]
 [f ]
-"60
-[; ;main.c: 60:     uint8_t segments;
+"56
+[; ;main.c: 56:     uint8_t segments;
 [v _segments `uc ~T0 @X0 1 a ]
-"61
-[; ;main.c: 61:     switch(num){
+"57
+[; ;main.c: 57:     switch(num){
 [e $U 647  ]
 {
-"62
-[; ;main.c: 62:         case 0: segments = 0b00111111; break;
+"58
+[; ;main.c: 58:         case 0: segments = 0b00111111; break;
 [e :U 648 ]
 [e = _segments -> -> 63 `i `uc ]
 [e $U 646  ]
-"63
-[; ;main.c: 63:         case 1: segments = 0b00000110; break;
+"59
+[; ;main.c: 59:         case 1: segments = 0b00000110; break;
 [e :U 649 ]
 [e = _segments -> -> 6 `i `uc ]
 [e $U 646  ]
-"64
-[; ;main.c: 64:         case 2: segments = 0b01011011; break;
+"60
+[; ;main.c: 60:         case 2: segments = 0b01011011; break;
 [e :U 650 ]
 [e = _segments -> -> 91 `i `uc ]
 [e $U 646  ]
-"65
-[; ;main.c: 65:         case 3: segments = 0b01001111; break;
+"61
+[; ;main.c: 61:         case 3: segments = 0b01001111; break;
 [e :U 651 ]
 [e = _segments -> -> 79 `i `uc ]
 [e $U 646  ]
-"66
-[; ;main.c: 66:         case 4: segments = 0b01100110; break;
+"62
+[; ;main.c: 62:         case 4: segments = 0b01100110; break;
 [e :U 652 ]
 [e = _segments -> -> 102 `i `uc ]
 [e $U 646  ]
-"67
-[; ;main.c: 67:         case 5: segments = 0b01101101; break;
+"63
+[; ;main.c: 63:         case 5: segments = 0b01101101; break;
 [e :U 653 ]
 [e = _segments -> -> 109 `i `uc ]
 [e $U 646  ]
-"68
-[; ;main.c: 68:         case 6: segments = 0b01111101; break;
+"64
+[; ;main.c: 64:         case 6: segments = 0b01111101; break;
 [e :U 654 ]
 [e = _segments -> -> 125 `i `uc ]
 [e $U 646  ]
-"69
-[; ;main.c: 69:         case 7: segments = 0b00000111; break;
+"65
+[; ;main.c: 65:         case 7: segments = 0b00000111; break;
 [e :U 655 ]
 [e = _segments -> -> 7 `i `uc ]
 [e $U 646  ]
-"70
-[; ;main.c: 70:         case 8: segments = 0b01111111; break;
+"66
+[; ;main.c: 66:         case 8: segments = 0b01111111; break;
 [e :U 656 ]
 [e = _segments -> -> 127 `i `uc ]
 [e $U 646  ]
-"71
-[; ;main.c: 71:         case 9: segments = 0b01100111; break;
+"67
+[; ;main.c: 67:         case 9: segments = 0b01100111; break;
 [e :U 657 ]
 [e = _segments -> -> 103 `i `uc ]
 [e $U 646  ]
-"72
-[; ;main.c: 72:         case 10: segments = 0b01110111; break;
+"68
+[; ;main.c: 68:         case 10: segments = 0b01110111; break;
 [e :U 658 ]
 [e = _segments -> -> 119 `i `uc ]
 [e $U 646  ]
-"73
-[; ;main.c: 73:         case 11: segments = 0b01111100; break;
+"69
+[; ;main.c: 69:         case 11: segments = 0b01111100; break;
 [e :U 659 ]
 [e = _segments -> -> 124 `i `uc ]
 [e $U 646  ]
-"74
-[; ;main.c: 74:         case 12: segments = 0b01011000; break;
+"70
+[; ;main.c: 70:         case 12: segments = 0b01011000; break;
 [e :U 660 ]
 [e = _segments -> -> 88 `i `uc ]
 [e $U 646  ]
-"75
-[; ;main.c: 75:         case 13: segments = 0b01011110; break;
+"71
+[; ;main.c: 71:         case 13: segments = 0b01011110; break;
 [e :U 661 ]
 [e = _segments -> -> 94 `i `uc ]
 [e $U 646  ]
-"76
-[; ;main.c: 76:         case 14: segments = 0b01111001; break;
+"72
+[; ;main.c: 72:         case 14: segments = 0b01111001; break;
 [e :U 662 ]
 [e = _segments -> -> 121 `i `uc ]
 [e $U 646  ]
-"77
-[; ;main.c: 77:         default: segments = 0b01110001; break;
+"73
+[; ;main.c: 73:         default: segments = 0b01110001; break;
 [e :U 663 ]
 [e = _segments -> -> 113 `i `uc ]
 [e $U 646  ]
-"78
-[; ;main.c: 78:     }
+"74
+[; ;main.c: 74:     }
 }
 [e $U 646  ]
 [e :U 647 ]
@@ -980,11 +980,11 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 14 `i 662
  663 ]
 [e :U 646 ]
-"79
-[; ;main.c: 79:     return segments;
+"75
+[; ;main.c: 75:     return segments;
 [e ) _segments ]
 [e $UE 645  ]
-"80
-[; ;main.c: 80: }
+"76
+[; ;main.c: 76: }
 [e :UE 645 ]
 }

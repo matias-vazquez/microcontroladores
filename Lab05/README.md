@@ -8,33 +8,32 @@ The basic principle of a matrix keypad is that we connect more than switch to a 
 ### Workload assignment
 This laboratory is broken down into four assignments that are distributed among all team members. Each team member has the responsability to complete their individual assignment and explain their part of the code on the demonstration video. Moreover, the whole team is in charge of assembling the final code into a single file and carry out the corresponding firmware and hardware tests. The required functions to complete the laboratory are:
 
-1. `get_key()`
-2. `char_to_seg()`. Unsigned char to 7-segment encoder. Converts the four least-significant bits of an 8-bit binary value stored in an `unsigned char` variable, into an 8-bit value corresponding to the 7-segment codification, stored in a `unsigned char` variable. Use the following table as a reference:
+1. `char_to_seg()`. Unsigned char to 7-segment encoder. Converts the four least-significant bits of an 8-bit binary value stored in an `uint8_t` variable, into an 8-bit value corresponding to the 7-segment codification, stored in a `uint8_t` variable. Use the following table as a reference:
 
 <div align="center">
 
-Decimal value | Binary value | 7-segment code
+Decimal value | Binary value (input) | 7-segment code (output)
 :---: | :---: | :---:
-0  | 0000 | 00000000
-1  | 0001 | 11111110
-2  | 0010 | 01100000
-3  | 0011 | 11011010
+0  | 0000 | 00111111
+1  | 0001 | 00000110
+2  | 0010 | 01011011
+3  | 0011 | 01001111
 4  | 0100 | 01100110
-5  | 0101 | 10110110
-6  | 0110 | 00111110
-7  | 0111 | 11100000
-8  | 1000 | 11111111
-9  | 1001 | 11100110
-10 | 1010 | 11101110
-11 | 1011 | 00111110
-12 | 1100 | 00011010
-13 | 1101 | 01111010
-14 | 1110 | 10011110
-15 | 1111 | 10001110
+5  | 0101 | 01101101
+6  | 0110 | 01111101
+7  | 0111 | 00000111
+8  | 1000 | 01111111
+9  | 1001 | 01100111
+10 | 1010 | 01110111
+11 | 1011 | 01111100
+12 | 1100 | 01011000
+13 | 1101 | 01011110
+14 | 1110 | 01111001
+15 | 1111 | 01110001
 
 </div>
 
-3. 
+2. `send_to_disp()`. Breaks down a 32-bit word (`uint32_t`) containing four 8-bit binary numbers (`0x00 + 0x00 + 0x00 + 0x00`), encodes each 8-bit digit by calling the `uint8_t char_to_seg(uint8_t)` function, and sends the encoded byte to the display.
 
 <div align="center">
 

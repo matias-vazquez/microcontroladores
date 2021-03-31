@@ -8549,12 +8549,8 @@ double yn(int, double);
 
 
 
-enum por_dir{ output, input };
-enum por_ACDC { digital, analog };
-enum resistor_state { set_ON, res_ON };
-enum led_state { led_OFF, led_ON };
-enum butto_state { pushed, no_pushed };
-# 24 "main.c"
+enum por_ACDC {digital, analog};
+# 20 "main.c"
 void portsInit(void);
 uint8_t char_to_seg(uint8_t);
 void send_to_disp(uint32_t);

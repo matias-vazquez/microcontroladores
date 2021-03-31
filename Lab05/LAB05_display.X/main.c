@@ -8,11 +8,7 @@
 #define SWEEP_FREQ 30
 
 //+++++++++++++++++++++++++++++++++++++| DATA TYPES |+++++++++++++++++++++++++++++++++++++
-enum por_dir{ output, input };              // output = 0, input = 1
-enum por_ACDC { digital, analog };          // digital = 0, analog = 1
-enum resistor_state { set_ON, res_ON };     // set_ON = 0, res_ON = 1
-enum led_state { led_OFF, led_ON };         // led_OFF = 0, led_ON = 1
-enum butto_state { pushed, no_pushed };     // pushed = 0, no_pushed = 1
+enum por_ACDC {digital, analog};          // digital = 0, analog = 1
 
 ////+++++++++++++++++++++++++++++++++++++| ISRs |+++++++++++++++++++++++++++++++++++++
 //// ISR for high priority

@@ -3,17 +3,16 @@ Microchip MPLAB XC8 Compiler V2.31
 Linker command line:
 
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
-  -h+dist/default/production\LAB05.X.production.sym \
-  --cmf=dist/default/production\LAB05.X.production.cmf -z -Q18F45K50 \
-  -oC:\Users\Labmems\AppData\Local\Temp\s2i8s.2 --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/production/LAB05.X.production.map -E1 -ver=XC8 Compiler \
-  --acfsm=1493 -ASTACK=01BCh-07FFh -pstack=STACK -ACODE=00h-07FFFh \
-  -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
-  -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh -AABS1=00h-07FFh \
-  -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
-  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
-  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
-  -ABANK7=0700h-07FFh -ASFR=0F53h-0F5Fh,0F60h-0FFFh \
+  -h+dist/default/debug\LAB05.X.debug.sym \
+  --cmf=dist/default/debug\LAB05.X.debug.cmf -z -Q18F45K50 \
+  -oC:\Users\Labmems\AppData\Local\Temp\s2kqo.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/debug/LAB05.X.debug.map -E1 -ver=XC8 Compiler --acfsm=1493 \
+  -ASTACK=01BCh-07FFh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
+  -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
+  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
+  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
+  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ASFR=0F53h-0F5Fh,0F60h-0FFFh \
   -ACONFIG=0300000h-030000Dh -AIDLOC=0200000h-0200007h \
   -AEEDATA=0F00000h-0F000FFh -peeprom_data=EEDATA \
   -preset_vec=00h,intcode,intcodelo,powerup,init -pramtop=0800h \
@@ -23,8 +22,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Labmems\AppData\Local\Temp\s2i8s.o \
-  dist/default/production\LAB05.X.production.o 
+  C:\Users\Labmems\AppData\Local\Temp\s2kqo.o \
+  dist/default/debug\LAB05.X.debug.o 
 
 Object code version is 3.11
 
@@ -33,11 +32,11 @@ Machine type is 18F45K50
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Labmems\AppData\Local\Temp\s2i8s.o
+C:\Users\Labmems\AppData\Local\Temp\s2kqo.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
-dist/default/production\LAB05.X.production.o
+dist/default/debug\LAB05.X.debug.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 smallconst                          800      800       80      400       0
@@ -606,7 +605,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 29 in file "main.c"
+		line 25 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -636,7 +635,7 @@ Total ram usage:        4 bytes
 
  *************** function _send_to_disp *****************
  Defined at:
-		line 48 in file "main.c"
+		line 44 in file "main.c"
  Parameters:    Size  Location     Type
   disp_word       4   52[BANK0 ] unsigned long 
  Auto vars:     Size  Location     Type
@@ -1107,7 +1106,7 @@ Total ram usage:       25 bytes
 
  *************** function _char_to_seg *****************
  Defined at:
-		line 59 in file "main.c"
+		line 55 in file "main.c"
  Parameters:    Size  Location     Type
   num             1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1167,7 +1166,7 @@ Total ram usage:       10 bytes
 
  *************** function _portsInit *****************
  Defined at:
-		line 38 in file "main.c"
+		line 34 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Wed Mar 31 00:14:15 2021
+                                                                                               Wed Mar 31 00:54:58 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	18F45K50
@@ -850,7 +850,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    836 ;;
    837 ;; *************** function _main *****************
    838 ;; Defined at:
-   839 ;;		line 29 in file "main.c"
+   839 ;;		line 25 in file "main.c"
    840 ;; Parameters:    Size  Location     Type
    841 ;;		None
    842 ;; Auto vars:     Size  Location     Type
@@ -884,11 +884,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    870  004B46                     _main:
    871                           	callstack 27
    872  004B46                     
-   873                           ;main.c: 30:     portsInit();
+   873                           ;main.c: 26:     portsInit();
    874  004B46  ECC5  F025         	call	_portsInit	;wreg free
    875  004B4A                     l3496:
    876  004B4A                     
-   877                           ;main.c: 33:         send_to_disp(num);
+   877                           ;main.c: 29:         send_to_disp(num);
    878  004B4A  0E05               	movlw	5
    879  004B4C  0100               	movlb	0	; () banked
    880  004B4E  6F94               	movwf	send_to_disp@disp_word& (0+255),b
@@ -906,7 +906,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    892                           
    893 ;; *************** function _send_to_disp *****************
    894 ;; Defined at:
-   895 ;;		line 48 in file "main.c"
+   895 ;;		line 44 in file "main.c"
    896 ;; Parameters:    Size  Location     Type
    897 ;;  disp_word       4   52[BANK0 ] unsigned long 
    898 ;; Auto vars:     Size  Location     Type
@@ -946,14 +946,14 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    932  0049B8                     _send_to_disp:
    933                           	callstack 27
    934  0049B8                     
-   935                           ;main.c: 49:     for (char i = 0; i < 4; i++){
+   935                           ;main.c: 45:     for (char i = 0; i < 4; i++){
    936  0049B8  0E00               	movlw	0
    937  0049BA  0100               	movlb	0	; () banked
    938  0049BC  6FA1               	movwf	send_to_disp@i& (0+255),b
    939  0049BE                     l3476:
    940                           
    941                           ; BSR set to: 0
-   942                           ;main.c: 50:         int internal_sweep = (int) powf(2,i);
+   942                           ;main.c: 46:         int internal_sweep = (int) powf(2,i);
    943  0049BE  51A1               	movf	send_to_disp@i& (0+255),w,b
    944  0049C0  6E01               	movwf	___xxtofl@val^0,c
    945  0049C2  6A02               	clrf	(___xxtofl@val+1)^0,c
@@ -966,7 +966,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    952  0049D6  C003  F09A         	movff	?___xxtofl+2,_send_to_disp$828+2
    953  0049DA  C004  F09B         	movff	?___xxtofl+3,_send_to_disp$828+3
    954  0049DE                     
-   955                           ;main.c: 50:         int internal_sweep = (int) powf(2,i);
+   955                           ;main.c: 46:         int internal_sweep = (int) powf(2,i);
    956  0049DE  C098  F08C         	movff	_send_to_disp$828,powf@y
    957  0049E2  C099  F08D         	movff	_send_to_disp$828+1,powf@y+1
    958  0049E6  C09A  F08E         	movff	_send_to_disp$828+2,powf@y+2
@@ -989,7 +989,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    975  004A18  C090  F09C         	movff	?___fltol,send_to_disp@internal_sweep
    976  004A1C  C091  F09D         	movff	?___fltol+1,send_to_disp@internal_sweep+1
    977  004A20                     
-   978                           ;main.c: 51:         int sweep = 0x0F & ~internal_sweep;
+   978                           ;main.c: 47:         int sweep = 0x0F & ~internal_sweep;
    979  004A20  0100               	movlb	0	; () banked
    980  004A22  1D9C               	comf	send_to_disp@internal_sweep& (0+255),w,b
    981  004A24  6E5A               	movwf	??_send_to_disp^0,c
@@ -1001,11 +1001,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    987  004A30  6B9F               	clrf	(send_to_disp@sweep+1)& (0+255),b
    988  004A32                     
    989                           ; BSR set to: 0
-   990                           ;main.c: 52:         LATB = (char) sweep;
+   990                           ;main.c: 48:         LATB = (char) sweep;
    991  004A32  C09E  FF8A         	movff	send_to_disp@sweep,3978	;volatile
    992  004A36                     
    993                           ; BSR set to: 0
-   994                           ;main.c: 53:         uint8_t num_disp = 0x000000FF & (disp_word >> i*8);
+   994                           ;main.c: 49:         uint8_t num_disp = 0x000000FF & (disp_word >> i*8);
    995  004A36  51A1               	movf	send_to_disp@i& (0+255),w,b
    996  004A38  0D08               	mullw	8
    997  004A3A  50F3               	movf	243,w,c
@@ -1028,12 +1028,12 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1014  004A64  6FA0               	movwf	send_to_disp@num_disp& (0+255),b
   1015  004A66                     
   1016                           ; BSR set to: 0
-  1017                           ;main.c: 54:         LATD = char_to_seg(num_disp);
+  1017                           ;main.c: 50:         LATD = char_to_seg(num_disp);
   1018  004A66  51A0               	movf	send_to_disp@num_disp& (0+255),w,b
   1019  004A68  EC48  F023         	call	_char_to_seg
   1020  004A6C  6E8C               	movwf	140,c	;volatile
   1021  004A6E                     
-  1022                           ;main.c: 55:         _delay((unsigned long)((30)*(8000000/4000.0)));
+  1022                           ;main.c: 51:         _delay((unsigned long)((30)*(8000000/4000.0)));
   1023  004A6E  0E4E               	movlw	78
   1024  004A70  6E5A               	movwf	??_send_to_disp^0,c
   1025  004A72  0EEB               	movlw	235
@@ -1044,7 +1044,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1030  004A7A  D7FC               	bra	u3697
   1031  004A7C  F000               	nop	
   1032  004A7E                     
-  1033                           ;main.c: 56:     }
+  1033                           ;main.c: 52:     }
   1034  004A7E  0100               	movlb	0	; () banked
   1035  004A80  2BA1               	incf	send_to_disp@i& (0+255),f,b
   1036  004A82                     
@@ -7997,7 +7997,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7983                           
   7984 ;; *************** function _char_to_seg *****************
   7985 ;; Defined at:
-  7986 ;;		line 59 in file "main.c"
+  7986 ;;		line 55 in file "main.c"
   7987 ;; Parameters:    Size  Location     Type
   7988 ;;  num             1    wreg     unsigned char 
   7989 ;; Auto vars:     Size  Location     Type
@@ -8035,7 +8035,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8021                           ;char_to_seg@num stored from wreg
   8022  004690  6E03               	movwf	char_to_seg@num^0,c
   8023  004692                     
-  8024                           ;main.c: 60:     uint8_t segments;;main.c: 61:     switch(num){
+  8024                           ;main.c: 56:     uint8_t segments;;main.c: 57:     switch(num){
   8025  004692  EF8B  F023         	goto	l3414
   8026  004696                     l3380:
   8027  004696  0E3F               	movlw	63
@@ -8176,7 +8176,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8161  0047A4  EF87  F023         	goto	l3410
   8162  0047A8                     l3416:
   8163                           
-  8164                           ;main.c: 79:     return segments;
+  8164                           ;main.c: 75:     return segments;
   8165  0047A8  5004               	movf	char_to_seg@segments^0,w,c
   8166  0047AA  0012               	return		;funcret
   8167  0047AC                     __end_of_char_to_seg:
@@ -8376,7 +8376,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8361                           
   8362 ;; *************** function _portsInit *****************
   8363 ;; Defined at:
-  8364 ;;		line 38 in file "main.c"
+  8364 ;;		line 34 in file "main.c"
   8365 ;; Parameters:    Size  Location     Type
   8366 ;;		None
   8367 ;; Auto vars:     Size  Location     Type
@@ -8409,32 +8409,32 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8394  004B8A                     _portsInit:
   8395                           	callstack 30
   8396  004B8A                     
-  8397                           ;main.c: 39:     ANSELA = digital;
+  8397                           ;main.c: 35:     ANSELA = digital;
   8398  004B8A  0E00               	movlw	0
   8399  004B8C  010F               	movlb	15	; () banked
   8400  004B8E  6F5B               	movwf	91,b	;volatile
   8401                           
-  8402                           ;main.c: 40:     TRISA = 0x0F;
+  8402                           ;main.c: 36:     TRISA = 0x0F;
   8403  004B90  0E0F               	movlw	15
   8404  004B92  6E92               	movwf	146,c	;volatile
   8405                           
-  8406                           ;main.c: 41:     ANSELB = digital;
+  8406                           ;main.c: 37:     ANSELB = digital;
   8407  004B94  0E00               	movlw	0
   8408  004B96  6F5C               	movwf	92,b	;volatile
   8409                           
-  8410                           ;main.c: 42:     TRISB = 0x00;
+  8410                           ;main.c: 38:     TRISB = 0x00;
   8411  004B98  0E00               	movlw	0
   8412  004B9A  6E93               	movwf	147,c	;volatile
   8413                           
-  8414                           ;main.c: 43:     ANSELD = digital;
+  8414                           ;main.c: 39:     ANSELD = digital;
   8415  004B9C  0E00               	movlw	0
   8416  004B9E  6F5E               	movwf	94,b	;volatile
   8417                           
-  8418                           ;main.c: 44:     TRISD = 0x00;
+  8418                           ;main.c: 40:     TRISD = 0x00;
   8419  004BA0  0E00               	movlw	0
   8420  004BA2  6E95               	movwf	149,c	;volatile
   8421                           
-  8422                           ;main.c: 45:     OSCCON = 0b01110100;
+  8422                           ;main.c: 41:     OSCCON = 0b01110100;
   8423  004BA4  0E74               	movlw	116
   8424  004BA6  6ED3               	movwf	211,c	;volatile
   8425  004BA8                     
@@ -8957,7 +8957,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Wed Mar 31 00:14:15 2021
+Symbol Table                                                                                   Wed Mar 31 00:54:58 2021
 
               ___fldiv@aexp 004A                ___fldiv@bexp 0049                ___fldiv@sign 0042  
                         _L1 0859                          _L2 0855                          _L3 0851  

@@ -3,8 +3,8 @@
 [d edition pro ]
 [d chip 18F45K50 ]
 [d frameptr 4065 ]
-"39 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
-[e E5272 por_ACDC `uc
+"35 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
+[e E5269 por_ACDC `uc
 digital 0
 analog 1
 ]
@@ -50,13 +50,13 @@ analog 1
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"29 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
+"25 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"38
+"34
 [v _portsInit portsInit `(v  1 e 1 0 ]
-"48
+"44
 [v _send_to_disp send_to_disp `(v  1 e 1 0 ]
-"59
+"55
 [v _char_to_seg char_to_seg `(uc  1 e 1 0 ]
 "232 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
 [v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
@@ -84,25 +84,25 @@ analog 1
 [v _dp_h dp_h `C[2]f  1 s 8 dp_h ]
 "21
 [v _dp_l dp_l `C[2]f  1 s 8 dp_l ]
-"29 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
+"25 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"35
+"31
 } 0
-"48
+"44
 [v _send_to_disp send_to_disp `(v  1 e 1 0 ]
 {
-"51
+"47
 [v send_to_disp@sweep sweep `i  1 a 2 62 ]
-"50
+"46
 [v send_to_disp@internal_sweep internal_sweep `i  1 a 2 60 ]
-"53
-[v send_to_disp@num_disp num_disp `uc  1 a 1 64 ]
 "49
+[v send_to_disp@num_disp num_disp `uc  1 a 1 64 ]
+"45
 [v send_to_disp@i i `uc  1 a 1 65 ]
-"48
+"44
 [v send_to_disp@disp_word disp_word `ul  1 p 4 52 ]
-"57
+"53
 } 0
 "52 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\powf.c
 [v _powf powf `JJ(f  1 e 4 0 ]
@@ -323,16 +323,16 @@ analog 1
 [v ___fldiv@a a `d  1 p 4 53 ]
 "185
 } 0
-"59 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
+"55 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
 [v _char_to_seg char_to_seg `(uc  1 e 1 0 ]
 {
 [v char_to_seg@num num `uc  1 a 1 wreg ]
-"60
+"56
 [v char_to_seg@segments segments `uc  1 a 1 3 ]
-"59
+"55
 [v char_to_seg@num num `uc  1 a 1 wreg ]
 [v char_to_seg@num num `uc  1 a 1 2 ]
-"80
+"76
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
@@ -344,8 +344,8 @@ analog 1
 [v ___fltol@f1 f1 `d  1 p 4 48 ]
 "70
 } 0
-"38 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
+"34 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab05\LAB05.X\main.c
 [v _portsInit portsInit `(v  1 e 1 0 ]
 {
-"46
+"42
 } 0
