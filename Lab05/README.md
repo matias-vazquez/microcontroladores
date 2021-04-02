@@ -1,3 +1,11 @@
+<div align="right">
+
+Find support at [![Support Server](https://img.shields.io/discord/591914197219016707.svg?color=7289da&label=ComputaciónTEC&logo=discord&style=flat-square)](https://discord.gg/xfB33VMq)
+
+<!--- https://naereen.github.io/badges/ --->
+
+</div>
+
 # 4x4 Matrix Keypad Driver
 
 ## Introduction
@@ -34,6 +42,8 @@ Decimal value | Binary value (input) | 7-segment code (output)
 </div>
 
 2. `send_to_disp()`. Breaks down a 32-bit word (`uint32_t`) containing four 8-bit binary numbers (`0x00 + 0x00 + 0x00 + 0x00`), encodes each 8-bit digit by calling the `uint8_t char_to_seg(uint8_t)` function, and sends the encoded byte to the display.
+
+3. `key_scanner()`. Sweeps each keypad row from top to bottom (bits `0` through `3` of Port A, configured as **outputs**), and scans the columns from left to right (bits `4` to `7` of Port A configured as **inputs**) to detect for a pressed key. Notice that the keypad have hard-wired _*pull-up*_ resistors tying column inputs to V<sub>CC</sub> when a key is not pressed, and short-circuiting them to GND when the key is pressed (_a.k.a._ inverted digital logic). 
 
 <div align="center">
 
@@ -74,49 +84,39 @@ Qty | Material
 --->
 
 ## Procedure
+
+### Hardware setup
+1. Connect the corresponding ports of the PIC18 &mu;C to the appropiate pinheaders of your expansion board, as well as the 4x4 matrix keypad. Use the table below as a reference for your connections.
+
+<div align="center">
+
+&mu;C Port | Type | Peripheral
+:---: | :---: |:---:
+A [0 to 3] | Input | Keypad [0 to 3]
+A [4 to 7] | Output | Keypad [4 to 7]
+B [0 to 4] | Output | 7-segment display, cathodes [D4, D3, D2, D1]
+D [0 to 7] | Output | 7-segment display, anodes [ABCDEFGP]
+
+</div>
+
 ### Firmware development
 
-1. Create a C program to do the following:
-   1. Show the corresponding numeric value of the pressed key on the 4x4 matrix keypad, on the 4-digit 7-segment display of your expansion board.  
-      * NOTE: The _*#*_ symbol must show the `0xE` value (`0b1110`), and the __*__ symbol must show the `0xF` value (`0b1111`).
-   2. When a key is pressed, the number/letter value should be showed in the least significant digit of the 7-segment display (rightmost digit).
-   3. When another key is pressed afterwards, the previous digit should be left-shifted to the, and the new value should take place on the least significant digit.
-   4. Use the following program structure and code the corresponding parts to write your keypad driver. 
+1. Open the `LAB05_display.X` MPLAB X project; this is the starting point for your labwork. This project contains a 4-digit 7-segment display driver, which displays four different numbers on each dislpay digit, respectively. 
 
-```C
+   1. Program your device and observe what is displayed. As you can see, each digit is turned on in a sequence (right to left) each time, while the rest remains off. This way, instead of using 8 pins (7 segments and decimal dot) + 1 pin (enable) to drive a display in parallel, which would add up to 36 pins, we used multiplexed outputs to enable only one digit each time and assign the corresponding value to that digit using the same 8 bits for all four digits. This is common practice to drive 7-segment displays by &mu;Cs, FPGAs and other devices. To be able to see all digits "on" at the same time, the sweeping frequency should be high enough, such as the eye cannot detect when the segments turn off. 
+      
+      * Reduce the value of the macro `SWEEP_STEP` on _line 8_, to a step value where you consider the four digits are displayed at the same time.  [![Generic badge](https://img.shields.io/badge/TO-REPORT-blue.svg)](https://experiencia21.tec.mx/)
+      * Also, change the value of the `num` variable on _line 28_ to display the numbers A, B, C and D. Consider this should be in BCD format for numbers between 0x0 and 0xF. [![Generic badge](https://img.shields.io/badge/TO-REPORT-blue.svg)](https://experiencia21.tec.mx/)
 
-////+++++++++++++++++++++++++++++++++++| LIBRARIES / HEADERS |+++++++++++++++++++++++++++++++++++++
-#include "device_config.h"
-//+++++++++++++++++++++++++++++++++++++| DIRECTIVES |+++++++++++++++++++++++++++++++++++++
-#define _XTAL_FREQ 1000000
+2. Write the function `key_scanner()` for the project to scan for a pressed key on the keypad. 
 
-//+++++++++++++++++++++++++++++++++++++| DATA TYPES |+++++++++++++++++++++++++++++++++++++
-enum por_dir{ output, input };              // output = 0, input = 1
-//...
+3. Write the corresponding code on `main()` to show the corresponding numeric value of the pressed key on the keypad, on the 4-digit 7-segment display of your expansion board. Consider the following restrictions:  
+      
+    * The _*#*_ symbol must show the `0xE` value (`0b1110`), and the __*__ symbol must show the `0xF` value (`0b1111`).
 
-//+++++++++++++++++++++++++++++++++++++| ISRs |+++++++++++++++++++++++++++++++++++++
-// ISR for high priority
-void __interrupt ( high_priority ) high_isr( void );
-// ISR for low priority
-void __interrupt ( low_priority ) low_isr( void ); 
+    * When a key is pressed, the number/letter value should be showed in the least significant digit of the 7-segment display (rightmost digit).
+    
+    * When another key is pressed afterwards, the previous digit should be left-shifted, and the new value should take place on the least significant digit.
 
-//+++++++++++++++++++++++++++++++++++++| FUNCTION DECLARATIONS |+++++++++++++++++++++++++++++++++++++
-void portsInit( void );
 
-//+++++++++++++++++++++++++++++++++++++| MAIN |+++++++++++++++++++++++++++++++++++++
-void main( void ){
-    portsInit();
-    while(1){
 
-    }
-}
-
-//+++++++++++++++++++++++++++++++++++++| FUNCTIONS |+++++++++++++++++++++++++++++++++++++
-void portsInit( void ){
-
-}
-
-```
-
-### Hardware implementation
-   5. Connect PortB of PIC18 to the appropiate pinhead of your expansion board, then connect the 4x4 matrix keypad to the opposite pinhead, and finally connect PortD of the microcontroller to the LEDs set. Your connection must look like the one shown in Fig. 5 at the end of this document.

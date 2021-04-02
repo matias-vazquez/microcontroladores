@@ -5,7 +5,7 @@
 
 //+++++++++++++++++++++++++++++++++++++| DIRECTIVES |+++++++++++++++++++++++++++++++++++++
 #define _XTAL_FREQ 8000000
-#define SWEEP_FREQ 30
+#define SWEEP_STEP 5000
 
 //+++++++++++++++++++++++++++++++++++++| DATA TYPES |+++++++++++++++++++++++++++++++++++++
 enum por_ACDC {digital, analog};          // digital = 0, analog = 1
@@ -25,7 +25,7 @@ void send_to_disp(uint32_t);
 void main(void){
     portsInit();
     while(1){
-        uint32_t num = 0x08070605;
+        uint32_t num = 0x01020304;
         send_to_disp(num);
     }
 }
@@ -48,7 +48,7 @@ void send_to_disp(uint32_t disp_word){
         LATB = (char) sweep;
         uint8_t num_disp = 0x000000FF & (disp_word >> i*8);
         LATD = char_to_seg(num_disp);
-        __delay_ms(SWEEP_FREQ);
+        __delay_ms(SWEEP_STEP);
     }
 }
 

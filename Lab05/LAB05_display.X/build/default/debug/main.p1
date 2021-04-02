@@ -769,9 +769,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 638 ]
 {
 "28
-[; ;main.c: 28:         uint32_t num = 0x08070605;
+[; ;main.c: 28:         uint32_t num = 0x01020304;
 [v _num `ul ~T0 @X0 1 a ]
-[e = _num -> -> 134678021 `l `ul ]
+[e = _num -> -> 16909060 `l `ul ]
 "29
 [; ;main.c: 29:         send_to_disp(num);
 [e ( _send_to_disp (1 _num ]
@@ -851,8 +851,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 50:         LATD = char_to_seg(num_disp);
 [e = _LATD ( _char_to_seg (1 _num_disp ]
 "51
-[; ;main.c: 51:         _delay((unsigned long)((30)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 51:         _delay((unsigned long)((5000)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "52
 [; ;main.c: 52:     }
 }
