@@ -6,7 +6,7 @@ Find support at [![Support Server](https://img.shields.io/discord/59191419721901
 
 </div>
 
-# 4x4 Matrix Keypad Driver
+# 4x4 Matrix Keypad Driver (draft)
 
 ## Introduction
 In a logic circuit is very important to ensure, at every moment, a known state for a signal (High, Low). A pull-up resistor is used to ensure a well-defined voltage (i.e. Vcc or Gnd), and in combination with switches this level can be changed, as shown in Fig. 1.
@@ -96,6 +96,14 @@ A [0 to 3] | Input | Keypad [0 to 3]
 A [4 to 7] | Output | Keypad [4 to 7]
 B [0 to 4] | Output | 7-segment display, cathodes [D4, D3, D2, D1]
 D [0 to 7] | Output | 7-segment display, anodes [ABCDEFGP]
+
+</div>
+
+The final schematic of the circuit is shown below:
+
+<div align="center">
+
+<img src="img/schematic.png">
 
 </div>
 
