@@ -1,8 +1,6 @@
 <div align="right">
 
-Find support at 
-
-[![Support Server](https://img.shields.io/discord/591914197219016707.svg?color=7289da&label=ComputaciónTEC&logo=discord&style=flat-square)](https://discord.gg/xfB33VMq)
+Find support at [![Support Server](https://img.shields.io/discord/591914197219016707.svg?color=7289da&label=ComputaciónTEC&logo=discord&style=flat-square)](https://discord.gg/xfB33VMq)
 
 <!--- https://naereen.github.io/badges/ --->
 
@@ -18,7 +16,7 @@ In this laboratory, the student will develop a 4x4 keypad driver for the PIC18 &
 * To know the function and interactions between the pull-up resistor and input/output ports of a device. 
 
 ## Introduction
-This laboratory is broken down into four assignments that are distributed among all team members. Each team member has the responsability to complete their individual assignment and explain their part of the code on the demonstration video. Moreover, the whole team is in charge of integrating the final design into a single project and carry out the corresponding firmware and hardware tests. 
+This laboratory is broken down into three assignments that are distributed among all team members. Each team member has the responsability to complete their individual assignment and explain their part of the code on the demonstration video. Moreover, the whole team is in charge of integrating the final design into a single project and carry out the corresponding firmware and hardware tests. 
 
 <div align="center">
 
@@ -42,30 +40,7 @@ Electronics engineer
 
 The MPLAB X project makes use of the following two functions:
 
-1. `char_to_seg()`. Unsigned char to 7-segment encoder. Converts the four least-significant bits of an 8-bit binary value stored in a `uint8_t` variable, into an 8-bit value corresponding to the 7-segment codification, stored in a `uint8_t` variable. Use the following table as a reference:
-
-<div align="center">
-
-Decimal value | Binary value (input) | 7-segment code (output)
-:---: | :---: | :---:
-0  | 0000 | 00111111
-1  | 0001 | 00000110
-2  | 0010 | 01011011
-3  | 0011 | 01001111
-4  | 0100 | 01100110
-5  | 0101 | 01101101
-6  | 0110 | 01111101
-7  | 0111 | 00000111
-8  | 1000 | 01111111
-9  | 1001 | 01100111
-10 | 1010 | 01110111
-11 | 1011 | 01111100
-12 | 1100 | 01011000
-13 | 1101 | 01011110
-14 | 1110 | 01111001
-15 | 1111 | 01110001
-
-</div>
+1. `char_to_seg()`. Unsigned char to 7-segment encoder. Converts the four least-significant bits of an 8-bit binary value stored in a `uint8_t` variable, into an 8-bit value corresponding to the 7-segment codification, stored in a `uint8_t` variable. [Use the 7-segment encoding table](7-seg_encoding.md) as a reference.
 
 2. `send_to_disp()`. Breaks down a 32-bit word (`uint32_t`) containing four 8-bit binary numbers (`0x00 + 0x00 + 0x00 + 0x00`), encodes each 8-bit digit by calling the `uint8_t char_to_seg(uint8_t)` function, and sends the encoded byte to the display.
 
@@ -94,7 +69,7 @@ Qty | Material
 
 ## Procedure
 
-### Hardware setup
+### __1. Hardware setup__
 Connect the corresponding ports of the PIC18 &mu;C to the appropiate pinheaders of your expansion board, as well as the 4x4 matrix keypad. Use the table below as a reference for your connections.
 
 <div align="center">
@@ -116,18 +91,18 @@ The final schematic of the circuit is shown below:
 
 </div>
 
-### Firmware development
+### __2. Firmware development__ [![Generic badge](https://img.shields.io/badge/GITHUB-REPO-blue.svg)](https://experiencia21.tec.mx/) [![Generic badge](https://img.shields.io/badge/WRITTEN-REPORT-blue.svg)](https://experiencia21.tec.mx/) [![Generic badge](https://img.shields.io/badge/SCREEN-CAPTURES-blue.svg)](https://experiencia21.tec.mx/) [![Generic badge](https://img.shields.io/badge/DEMO-VIDEO-blue.svg)](https://experiencia21.tec.mx/)
 
 1. Open the `LAB05_display.X` MPLAB X project; this is the starting point for your labwork. This project contains a 4-digit 7-segment display driver, which displays four different numbers on each dislpay digit, respectively. With this base project, do the following:
 
    1. Program your device and observe what is displayed. As you will see, each digit is turned on in a sequence (right to left) each time step, while the rest remain off. This way, instead of using 8 pins (7 segments and decimal dot) + 1 pin (enable) to drive one 1-digit display in parallel, which would add up to 36 pins for four digits, we used multiplexed outputs to enable only one digit each time and assign the corresponding value to that digit using the same 8 segment bits for all four digits. This is common practice to drive 7-segment displays using &mu;Cs, FPGAs and other devices. To be able to see all digits "on" at the same time, the sweeping frequency should be high enough, such as the eye cannot detect when the segments turn off. 
       
-      * Reduce the value of the macro `SWEEP_STEP` on _line 8_, to a step value where you consider the four digits are displayed at the same time. Report this value.  [![Generic badge](https://img.shields.io/badge/WRITTEN-REPORT-blue.svg)](https://experiencia21.tec.mx/)
-      * Also, change the value of the `num` variable on _line 28_ to display the numbers A, B, C and D instead pf those displaying from the original project. Consider this should be in BCD format for numbers between 0x0 and 0xF. [![Generic badge](https://img.shields.io/badge/SCREEN-CAPTURE-blue.svg)](https://experiencia21.tec.mx/)
+      * Reduce the value of the macro `SWEEP_STEP` on _line 8_, to a step value where you consider the four digits are displayed at the same time. Report this value.
+      * Also, change the value of the `num` variable on _line 28_ to display the numbers A, B, C and D instead pf those displaying from the original project. Consider this should be in BCD format for numbers between 0x0 and 0xF. 
 
-2. Write the function `key_scanner()` to scan for a pressed key on the keypad. [![Generic badge](https://img.shields.io/badge/GITHUB-REPO-blue.svg)](https://experiencia21.tec.mx/) 
+2. Write the function `key_scanner()` to scan for a pressed key on the keypad. 
 
-3. Write the corresponding code on `main()` to show the numeric value of the pressed key on the keypad, on the 4-digit 7-segment display of your expansion board. Consider the following restrictions [![Generic badge](https://img.shields.io/badge/GITHUB-REPO-blue.svg)](https://experiencia21.tec.mx/): 
+3. Write the corresponding code on `main()` to show the numeric value of the pressed key on the keypad, on the 4-digit 7-segment display of your expansion board. Consider the following restrictions: 
       
     * The _*#*_ symbol must show the `0xE` value (`0b1110`), and the __*__ symbol must show the `0xF` value (`0b1111`).
 
@@ -135,7 +110,7 @@ The final schematic of the circuit is shown below:
     
     * When another key is pressed afterwards, the previous digit should be left-shifted, and the new value should take place on the least significant digit.
 
-4. Test your driver on the Curiosity board and record a demonstrative video presenting the display as it shows the corresponding digits as the keys on the keypad are pressed. [![Generic badge](https://img.shields.io/badge/DEMO-VIDEO-blue.svg)](https://experiencia21.tec.mx/)
+4. Test your driver on the Curiosity board and record a demonstrative video presenting the display as it shows the corresponding digits as the keys on the keypad are pressed. 
 
 ## Report
 Elaborate a technical report that includes the following sections
