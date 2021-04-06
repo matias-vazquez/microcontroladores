@@ -8559,7 +8559,7 @@ void send_to_disp(uint32_t);
 void main(void){
     portsInit();
     while(1){
-        uint32_t num = 0x08070605;
+        uint32_t num = 0x01020304;
         send_to_disp(num);
     }
 }
@@ -8582,7 +8582,7 @@ void send_to_disp(uint32_t disp_word){
         LATB = (char) sweep;
         uint8_t num_disp = 0x000000FF & (disp_word >> i*8);
         LATD = char_to_seg(num_disp);
-        _delay((unsigned long)((30)*(8000000/4000.0)));
+        _delay((unsigned long)((5000)*(8000000/4000.0)));
     }
 }
 

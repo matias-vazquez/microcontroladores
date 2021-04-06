@@ -3,16 +3,18 @@ Microchip MPLAB XC8 Compiler V2.31
 Linker command line:
 
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
-  -h+dist/default/debug\LAB05.X.debug.sym \
-  --cmf=dist/default/debug\LAB05.X.debug.cmf -z -Q18F45K50 \
-  -oC:\Users\Labmems\AppData\Local\Temp\s2kqo.2 --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/debug/LAB05.X.debug.map -E1 -ver=XC8 Compiler --acfsm=1493 \
-  -ASTACK=01BCh-07FFh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
-  -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
-  -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
-  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
-  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
-  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ASFR=0F53h-0F5Fh,0F60h-0FFFh \
+  -h+dist/default/production\LAB05_display.X.production.sym \
+  --cmf=dist/default/production\LAB05_display.X.production.cmf -z \
+  -Q18F45K50 -oC:\Users\Labmems\AppData\Local\Temp\s3s94.2 \
+  --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/LAB05_display.X.production.map -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -ASTACK=01BCh-07FFh -pstack=STACK \
+  -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
+  -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh -AABS1=00h-07FFh \
+  -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ASFR=0F53h-0F5Fh,0F60h-0FFFh \
   -ACONFIG=0300000h-030000Dh -AIDLOC=0200000h-0200007h \
   -AEEDATA=0F00000h-0F000FFh -peeprom_data=EEDATA \
   -preset_vec=00h,intcode,intcodelo,powerup,init -pramtop=0800h \
@@ -22,8 +24,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Labmems\AppData\Local\Temp\s2kqo.o \
-  dist/default/debug\LAB05.X.debug.o 
+  C:\Users\Labmems\AppData\Local\Temp\s3s94.o \
+  dist/default/production\LAB05_display.X.production.o 
 
 Object code version is 3.11
 
@@ -32,61 +34,61 @@ Machine type is 18F45K50
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Labmems\AppData\Local\Temp\s2kqo.o
+C:\Users\Labmems\AppData\Local\Temp\s3s94.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
-dist/default/debug\LAB05.X.debug.o
+dist/default/production\LAB05_display.X.production.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 smallconst                          800      800       80      400       0
-                text16                             4B8A     4B8A       20      440       0
+                text16                             4B90     4B90       20      440       0
                 text15                             47AC     47AC      108      440       0
                 text14                             4690     4690      11C      440       0
                 text13                             3F0E     3F0E      39A      440       0
-                text12                             4ADA     4ADA       38      440       0
+                text12                             4AE0     4AE0       38      440       0
                 text11                             3624     3624      4C0      440       0
-                text10                             4A94     4A94       46      440       0
+                text10                             4A9A     4A9A       46      440       0
                 text9                              44DC     44DC      1B4      440       0
-                text8                              4B12     4B12       34      440       0
+                text8                              4B18     4B18       34      440       0
                 text7                              3AE4     3AE4      42A      440       0
                 text6                              42A8     42A8      234      440       0
                 text5                              48B4     48B4      104      440       0
-                text4                              4B68     4B68       22      440       0
+                text4                              4B6E     4B6E       22      440       0
                 text3                              3164     3164      4C0      440       0
                 text2                               880      880     28E4      440       0
-                text1                              49B8     49B8       DC      440       0
-                text0                              4B46     4B46       22      440       0
+                text1                              49B8     49B8       E2      440       0
+                text0                              4B4C     4B4C       22      440       0
                 cstackCOMRAM                          1        1       5D        1       1
                 cstackBANK0                          60       60       42       60       1
                 cstackBANK1                         100      100       BC      100       1
                 bssBANK0                             A2       A2        4       60       1
                 bssCOMRAM                            5E       5E        2        1       1
-                cinit                              4BAA     4BAA       18      440       0
+                cinit                              4BB0     4BB0       18      440       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 init                                  0        0        4         0
-                text16                             4B8A     4B8A       20         0
+                text16                             4B90     4B90       20         0
                 text15                             47AC     47AC      108         0
                 text14                             4690     4690      11C         0
                 text13                             3F0E     3F0E      39A         0
-                text12                             4ADA     4ADA       38         0
+                text12                             4AE0     4AE0       38         0
                 text11                             3624     3624      4C0         0
-                text10                             4A94     4A94       46         0
+                text10                             4A9A     4A9A       46         0
                 text9                              44DC     44DC      1B4         0
-                text8                              4B12     4B12       34         0
+                text8                              4B18     4B18       34         0
                 text7                              3AE4     3AE4      42A         0
                 text6                              42A8     42A8      234         0
                 text5                              48B4     48B4      104         0
-                text4                              4B68     4B68       22         0
+                text4                              4B6E     4B6E       22         0
                 text3                              3164     3164      4C0         0
                 text2                               880      880     28E4         0
-                text1                              49B8     49B8       DC         0
-                text0                              4B46     4B46       22         0
-                cinit                              4BAA     4BAA       18         0
+                text1                              49B8     49B8       E2         0
+                text0                              4B4C     4B4C       22         0
+                cinit                              4BB0     4BB0       18         0
 
         CLASS   CONST          
 
@@ -145,7 +147,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 cstackBANK0                    000060  000046  0000A6        60       1  BANK0   
                 cstackBANK1                    000100  0000BC  0001BC       100       1  BANK1   
                 smallconst                     000800  000080  000880       400       0  SMALLCON
-                text2                          000880  004342  004BC2       440       0  CODE    
+                text2                          000880  004348  004BC8       440       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -162,15 +164,15 @@ UNUSED ADDRESS RANGES
         BIGRAM           0000A6-0000FF               5A
                          0001BC-0007FF              644
         CODE             000004-0007FF              7FC
-                         004BC2-007FFF             343E
+                         004BC8-007FFF             3438
         CONST            000004-0007FF              7FC
-                         004BC2-007FFF             343E
+                         004BC8-007FFF             3438
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      004BC2-007FFF             343E
+        MEDIUMCONST      004BC8-007FFF             3438
         RAM              0000A6-0000FF               5A
                          0001BC-0007FF              100
         SFR              000F53-000FFF                D
-        SMALLCONST       004BC2-007FFF              100
+        SMALLCONST       004BC8-007FFF              100
         STACK            0001BC-0007FF              644
 
                                   Symbol Table
@@ -251,7 +253,7 @@ __Hreset_vec                reset_vec    000000
 __Hrparam                   rparam       000000
 __Hsfr                      sfr          000000
 __Hsmallconst               smallconst   000880
-__Hspace_0                  (abs)        004BC2
+__Hspace_0                  (abs)        004BC8
 __Hspace_1                  (abs)        0001BC
 __Hspace_2                  (abs)        000000
 __Hspace_4                  (abs)        60000E
@@ -356,7 +358,7 @@ __Ltext6                    text6        000000
 __Ltext7                    text7        000000
 __Ltext8                    text8        000000
 __Ltext9                    text9        000000
-__S0                        (abs)        004BC2
+__S0                        (abs)        004BC8
 __S1                        (abs)        0001BC
 __S2                        (abs)        000000
 __S4                        (abs)        000000
@@ -389,9 +391,9 @@ ___flmul@grs                cstackCOMRAM 00001E
 ___flmul@prod               cstackCOMRAM 000024
 ___flmul@sign               cstackCOMRAM 00001D
 ___flmul@temp               cstackCOMRAM 000028
-___flneg                    text12       004ADA
+___flneg                    text12       004AE0
 ___flneg@f1                 cstackCOMRAM 000001
-___flsub                    text10       004A94
+___flsub                    text10       004A9A
 ___flsub@a                  cstackCOMRAM 00002E
 ___flsub@b                  cstackCOMRAM 00002A
 ___fltol                    text15       0047AC
@@ -425,11 +427,11 @@ __end_of___fladd            text11       003AE4
 __end_of___fldiv            text13       0042A8
 __end_of___flge             text5        0049B8
 __end_of___flmul            text7        003F0E
-__end_of___flneg            text12       004B12
-__end_of___flsub            text10       004ADA
+__end_of___flneg            text12       004B18
+__end_of___flsub            text10       004AE0
 __end_of___fltol            text15       0048B4
 __end_of___xxtofl           text9        004690
-__end_of__initialization    cinit        004BB8
+__end_of__initialization    cinit        004BBE
 __end_of_bp                 smallconst   000871
 __end_of_char_to_seg        text14       0047AC
 __end_of_cp                 smallconst   000821
@@ -437,7 +439,7 @@ __end_of_cp_h               smallconst   00087D
 __end_of_cp_l               smallconst   000879
 __end_of_dp_h               smallconst   000811
 __end_of_dp_l               smallconst   000809
-__end_of_fabsf              text8        004B46
+__end_of_fabsf              text8        004B4C
 __end_of_huge               smallconst   000865
 __end_of_ivln2              smallconst   00081D
 __end_of_ivln2_h            smallconst   000875
@@ -445,42 +447,42 @@ __end_of_ivln2_l            smallconst   000819
 __end_of_lg2                smallconst   000831
 __end_of_lg2_h              smallconst   00082D
 __end_of_lg2_l              smallconst   000829
-__end_of_main               text0        004B68
-__end_of_nanf               text4        004B8A
+__end_of_main               text0        004B6E
+__end_of_nanf               text4        004B90
 __end_of_ovt                smallconst   000825
-__end_of_portsInit          text16       004BAA
+__end_of_portsInit          text16       004BB0
 __end_of_powf               text2        003164
 __end_of_scalbnf            text6        0044DC
-__end_of_send_to_disp       text1        004A94
+__end_of_send_to_disp       text1        004A9A
 __end_of_sqrtf              text3        003624
 __end_of_tiny               smallconst   000861
 __end_of_tiny@sqrtf$F633    smallconst   000815
 __end_of_two24              smallconst   000869
-__initialization            cinit        004BAA
+__initialization            cinit        004BB0
 __mediumconst               mediumconst  000000
 __pbssBANK0                 bssBANK0     0000A2
 __pbssCOMRAM                bssCOMRAM    00005E
-__pcinit                    cinit        004BAA
+__pcinit                    cinit        004BB0
 __pcstackBANK0              cstackBANK0  000060
 __pcstackBANK1              cstackBANK1  000100
 __pcstackCOMRAM             cstackCOMRAM 000001
 __psmallconst               smallconst   000800
-__ptext0                    text0        004B46
+__ptext0                    text0        004B4C
 __ptext1                    text1        0049B8
-__ptext10                   text10       004A94
+__ptext10                   text10       004A9A
 __ptext11                   text11       003624
-__ptext12                   text12       004ADA
+__ptext12                   text12       004AE0
 __ptext13                   text13       003F0E
 __ptext14                   text14       004690
 __ptext15                   text15       0047AC
-__ptext16                   text16       004B8A
+__ptext16                   text16       004B90
 __ptext2                    text2        000880
 __ptext3                    text3        003164
-__ptext4                    text4        004B68
+__ptext4                    text4        004B6E
 __ptext5                    text5        0048B4
 __ptext6                    text6        0042A8
 __ptext7                    text7        003AE4
-__ptext8                    text8        004B12
+__ptext8                    text8        004B18
 __ptext9                    text9        0044DC
 __ramtop                    ramtop       000800
 __size_of___fladd           (abs)        000000
@@ -506,10 +508,10 @@ _char_to_seg                text14       004690
 _dp_h                       smallconst   000809
 _dp_l                       smallconst   000801
 _errno                      bssCOMRAM    00005E
-_fabsf                      text8        004B12
-_main                       text0        004B46
-_nanf                       text4        004B68
-_portsInit                  text16       004B8A
+_fabsf                      text8        004B18
+_main                       text0        004B4C
+_nanf                       text4        004B6E
+_portsInit                  text16       004B90
 _powf                       text2        000880
 _powf$829                   cstackBANK1  0001A4
 _powf$830                   cstackBANK1  000154
@@ -532,7 +534,7 @@ _send_to_disp$828           cstackBANK0  000098
 _sqrtf                      text3        003164
 char_to_seg@num             cstackCOMRAM 000003
 char_to_seg@segments        cstackCOMRAM 000004
-end_of_initialization       cinit        004BB8
+end_of_initialization       cinit        004BBE
 fabsf@F465                  bssBANK0     0000A2
 fabsf@u                     cstackCOMRAM 000005
 fabsf@x                     cstackCOMRAM 000001
@@ -598,7 +600,7 @@ sqrtf@z                     cstackBANK0  000078
 stackhi                     (abs)        0007FF
 stacklo                     (abs)        0001BC
 start                       init         000000
-start_initialization        cinit        004BAA
+start_initialization        cinit        004BB0
 
 
 FUNCTION INFORMATION:
@@ -1198,23 +1200,23 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nanf.c
-		_nanf          		CODE           	4B68	0000	34
+		_nanf          		CODE           	4B6E	0000	34
 
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nanf.c estimated size: 34
 
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
-		___flsub       		CODE           	4A94	0000	70
+		___flsub       		CODE           	4A9A	0000	70
 		___fladd       		CODE           	3624	0000	1216
 
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c estimated size: 1286
 
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c
-		___flneg       		CODE           	4ADA	0000	56
+		___flneg       		CODE           	4AE0	0000	56
 
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c estimated size: 56
 
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fabsf.c
-		_fabsf         		CODE           	4B12	0000	52
+		_fabsf         		CODE           	4B18	0000	52
 
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fabsf.c estimated size: 52
 
@@ -1238,7 +1240,7 @@ shared
 		_lg2_l         		SMALLCONST     	0000	0000	0
 		_ivln2_l       		SMALLCONST     	0000	0000	0
 		_ivln2         		SMALLCONST     	0000	0000	0
-		__initialization		CODE           	4BAA	0000	14
+		__initialization		CODE           	4BB0	0000	14
 		_bp            		SMALLCONST     	0869	0000	8
 		_cp            		SMALLCONST     	0000	0000	0
 		_cp_h          		SMALLCONST     	0000	0000	0
@@ -1292,10 +1294,10 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\scalbnf.c
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\scalbnf.c estimated size: 564
 
 main.c
-		_portsInit     		CODE           	4B8A	0000	32
-		_main          		CODE           	4B46	0000	34
-		_send_to_disp  		CODE           	49B8	0000	220
+		_portsInit     		CODE           	4B90	0000	32
+		_main          		CODE           	4B4C	0000	34
+		_send_to_disp  		CODE           	49B8	0000	226
 		_char_to_seg   		CODE           	4690	0000	284
 
-main.c estimated size: 570
+main.c estimated size: 576
 
