@@ -144,7 +144,7 @@ The final schematic of the circuit is shown below:
 
 4. Test your driver on the Curiosity board and record a demonstrative video presenting the display as it shows the corresponding digits as the keys on the keypad are pressed. 
 
-## Deliveries
+## Deliverables
 1. Turn in a technical report that includes worthwhile details about your lab work. Your report must be elaborated according to the [Formal Lab Report Grading Rubric](https://experiencia21.tec.mx/courses/130808/pages/rubrica-de-reportes-de-laboratorio), thus is strongly suggested to review the rubric before submitting your report and make sure you include all the required information. Your report should include the following sections:
    1. Procedures
    2. Results
