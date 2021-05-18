@@ -65,5 +65,13 @@ Remember to follow the programming structure presented in [3]:
 <img src="img/Picture3.png">
 </div>
 
+## Deliverables
+1. Turn in a technical report that includes worthwhile details about your lab work. Your report must be elaborated according to the Formal Lab Report Grading Rubric, thus is strongly suggested to review the rubric before submitting your report and make sure you include all the required information. Your report should include the following sections:
 
+    1. Procedure
+    2. Results
+    3. Individual conclusions
+    4. References
+
+2. Complete the Self & Peer Assessment for Lab 7, which will allow you to rate your and your teammates' performance during the lab work. This assessment will be considered to assign individual grades for Lab 7. You will receive an e-mail with a personalized link to fill out your assessment after the report submission due date has passed.
 
