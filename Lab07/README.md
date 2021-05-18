@@ -8,6 +8,10 @@ The student will write a C program implementing the timer module to count events
 ## Background
 A waveform/function generator, see Fig. 1, is an instrument used in electronics that serves to generate or simulate specific signals with certain characteristics. For example, create or simulate a signal that can be square, sinusoidal, of a certain frequency, and of a certain amplitude. In this way, we can apply this generated signal to a circuit to see its response.
 
+<div align="center">
+<img src="img/Picture2.png">
+</div>
+
 Function Generator Configuration:
 - High impedance: 
     - `Utility → Output Setup → High Z → DONE`
@@ -41,6 +45,10 @@ Remember to follow the programming structure presented in [3]:
 7.	Create a new project in the MPLAB X IDE for the “Curiosity” board (PIC18F45K50 microcontroller). More details are presented in [3].
 8.	Create a C program to measure the frequency of a function generator through the TIMER modules of the PIC18F45K50, and display the corresponding frequency value in the LCD display, as shown in Fig 2. More details about LCD are presented in [4].
 
+<div align="center">
+<img src="img/Picture1.png">
+</div>
+
 9.	Constraints and indications:
     - You can not use the "delays.h" library.
     - The frequency range to read from the function generator is from 0 to 255 Hz.
@@ -52,6 +60,10 @@ Remember to follow the programming structure presented in [3]:
 
 ### Part C. Hardware setup
 10.	Configure the function generator as was shown in part II section C. Connect the Function Generator to the External Clock signal for TIMER 0 (RA4/T0CKI pin) of the PIC18. Make a connection to make common the PIC18 GND and the GND of the Function Generator. Connect the LCD display in the same fashion as done in Practice 7. Your final implementation must be like the one shown in figure 2 (check figure 2 at the end of this document.)
+
+<div align="center">
+<img src="img/Picture3.png">
+</div>
 
 
 

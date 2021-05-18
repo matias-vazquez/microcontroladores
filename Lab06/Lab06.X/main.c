@@ -32,12 +32,12 @@ void main(void) {
     LCD_E  = 0;
 
     LCD_init();
+
     while(1){
-        send2LCD('A');    
+               send2LCD('A'); 
     }
     
 }
-
 
 void send2LCD(char xy){
     LCD_RS = 1;

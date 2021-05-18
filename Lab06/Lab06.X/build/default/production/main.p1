@@ -788,21 +788,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34
 [; ;main.c: 34:     LCD_init();
 [e ( _LCD_init ..  ]
-"35
-[; ;main.c: 35:     while(1){
+"36
+[; ;main.c: 36:     while(1){
 [e :U 638 ]
 {
-"36
-[; ;main.c: 36:         send2LCD('A');
-[e ( _send2LCD (1 -> -> 65 `ui `uc ]
 "37
-[; ;main.c: 37:     }
+[; ;main.c: 37:                send2LCD('A');
+[e ( _send2LCD (1 -> -> 65 `ui `uc ]
+"38
+[; ;main.c: 38:     }
 }
 [e :U 637 ]
 [e $U 638  ]
 [e :U 639 ]
-"39
-[; ;main.c: 39: }
+"40
+[; ;main.c: 40: }
 [e :UE 636 ]
 }
 "42

@@ -8100,12 +8100,12 @@ void main(void) {
     LATCbits.LATC0 = 0;
 
     LCD_init();
+
     while(1){
-        send2LCD('A');
+               send2LCD('A');
     }
 
 }
-
 
 void send2LCD(char xy){
     LATCbits.LATC2 = 1;

@@ -188,7 +188,7 @@ cinit 7F94 7F99 CODE 7F94 0
 %locals
 dist/default/production\Lab06.X.production.o
 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
-C:\Users\Labmems\AppData\Local\Temp\sfeg.s
+C:\Users\Labmems\AppData\Local\Temp\sa24.s
 593 7F94 0 CODE 0
 595 7F94 0 CODE 0
 598 7F94 0 CODE 0
@@ -203,7 +203,7 @@ main.c
 31 7FEA 0 CODE 0
 32 7FEC 0 CODE 0
 34 7FEE 0 CODE 0
-36 7FF2 0 CODE 0
+37 7FF2 0 CODE 0
 main.c
 42 7FAE 0 CODE 0
 43 7FB0 0 CODE 0
