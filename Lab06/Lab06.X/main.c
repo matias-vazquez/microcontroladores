@@ -25,7 +25,7 @@ void LCD_init(void);
 void LCD_cmd(char);
     
 void main(void) {
-    OSCCON = 0b01110110;// Set the internal oscillator to 8MHz and stable
+    OSCCON = 0x74;// Set the internal oscillator to 8MHz and stable
     LCD_DATA_DIR = 0x00;
     LCD_RS = 0;
     LCD_RW = 0;
@@ -33,10 +33,19 @@ void main(void) {
 
     LCD_init();
 
-    while(1){
-               send2LCD('A'); 
-    }
-    
+    send2LCD('L');
+    send2LCD('a');
+    send2LCD('b');
+    send2LCD('o');
+    send2LCD('r');
+    send2LCD('a');
+    send2LCD('t');
+    send2LCD('o');
+    send2LCD('r');
+    send2LCD('i');
+    send2LCD('o');
+
+    while(1);
 }
 
 void send2LCD(char xy){
@@ -47,6 +56,7 @@ void send2LCD(char xy){
     Nop();
     Nop();
     LCD_E  = 0;
+    __delay_ms(250);
 }
 
 void LCD_init(void){
@@ -54,9 +64,12 @@ void LCD_init(void){
     LCD_E_DIR = 0;          // Set Enable as output
     LCD_RS_DIR = 0;         // Set RS as output 
     LCD_RW_DIR = 0;         // Set R/W as output
-    LCD_cmd(0x38);          // Display to 2x40
+    LCD_cmd(0x38);          // Display to 2x16
+    __delay_ms(250);  
     LCD_cmd(0x0F);          // Display on, cursor on and blinking
+    __delay_ms(250);  
     LCD_cmd(0x01);          // Clear display and move cursor home
+    __delay_ms(250);  
 }
 
 void LCD_rdy(void){
@@ -76,7 +89,7 @@ void LCD_rdy(void){
 }
 
 void LCD_cmd(char cx) {
-    //LCD_rdy();              // wait until LCD is ready
+   // LCD_rdy();              // wait until LCD is ready
     LCD_RS = 0;             // select IR register
     LCD_RW = 0;             // set WRITE mode
     LCD_E  = 1;             // set to clock data

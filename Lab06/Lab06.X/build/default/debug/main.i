@@ -8093,7 +8093,7 @@ void LCD_init(void);
 void LCD_cmd(char);
 
 void main(void) {
-    OSCCON = 0b01110110;
+    OSCCON = 0x74;
     TRISD = 0x00;
     LATCbits.LATC2 = 0;
     LATCbits.LATC1 = 0;
@@ -8101,10 +8101,19 @@ void main(void) {
 
     LCD_init();
 
-    while(1){
-               send2LCD('A');
-    }
+    send2LCD('L');
+    send2LCD('a');
+    send2LCD('b');
+    send2LCD('o');
+    send2LCD('r');
+    send2LCD('a');
+    send2LCD('t');
+    send2LCD('o');
+    send2LCD('r');
+    send2LCD('i');
+    send2LCD('o');
 
+    while(1);
 }
 
 void send2LCD(char xy){
@@ -8115,6 +8124,7 @@ void send2LCD(char xy){
     __nop();
     __nop();
     LATCbits.LATC0 = 0;
+    _delay((unsigned long)((250)*(8000000/4000.0)));
 }
 
 void LCD_init(void){
@@ -8123,8 +8133,11 @@ void LCD_init(void){
     TRISCbits.TRISC2 = 0;
     TRISCbits.TRISC1 = 0;
     LCD_cmd(0x38);
+    _delay((unsigned long)((250)*(8000000/4000.0)));
     LCD_cmd(0x0F);
+    _delay((unsigned long)((250)*(8000000/4000.0)));
     LCD_cmd(0x01);
+    _delay((unsigned long)((250)*(8000000/4000.0)));
 }
 
 void LCD_rdy(void){
