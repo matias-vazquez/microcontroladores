@@ -71,12 +71,12 @@ where:
     - The time for each state should be as follows: St1 = 3 seconds, St2 = 1 second, St3 = depends of the times the push button was pressed (1s to 8s), St4 = 3 seconds, and St5 = 1 second. The time must be generated with Timer0.
     - The five possible states for the system are shown below:
 <div align="center">
-<img src="img/traffic.png">
+<img width=600, src="img/traffic.png">
 </div>
 
 A suggestion for the implementation of the traffic light system is to think on it as a state machine design, as shown below:
 <div align="center">
-<img src="img/fig5.png">
+<img width= 500, src="img/fig5.png">
 </div>
 
 ### __Hardware implementation__
