@@ -29,17 +29,21 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "27 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab06\Lab06.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"51
+"57
 [v _send2LCD send2LCD `(v  1 e 1 0 ]
-"62
+"68
 [v _LCD_init LCD_init `(v  1 e 1 0 ]
-"91
+"97
 [v _LCD_cmd LCD_cmd `(v  1 e 1 0 ]
-"3305 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
+"327 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
+[v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
+"361
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"3305
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
 "4003
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S26 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S29 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -49,7 +53,7 @@
 `uc 1 LATC7 1 0 :1:7 
 ]
 "4030
-[s S35 . 1 `uc 1 LC0 1 0 :1:0 
+[s S38 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -58,11 +62,13 @@
 `uc 1 LC6 1 0 :1:6 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S44 . 1 `S26 1 . 1 0 `S35 1 . 1 0 ]
-[v _LATCbits LATCbits `VES44  1 e 1 @3979 ]
+[u S47 . 1 `S29 1 . 1 0 `S38 1 . 1 0 ]
+[v _LATCbits LATCbits `VES47  1 e 1 @3979 ]
 "4105
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S87 . 1 `uc 1 TRISC0 1 0 :1:0 
+"5070
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S90 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -72,15 +78,15 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "5100
-[s S96 . 1 `uc 1 RC0 1 0 :1:0 
+[s S99 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[u S103 . 1 `S87 1 . 1 0 `S96 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES103  1 e 1 @3988 ]
+[u S106 . 1 `S90 1 . 1 0 `S99 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES106  1 e 1 @3988 ]
 "5248
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "12356
@@ -88,27 +94,27 @@
 "27 C:\Users\Labmems\GDriveTEC\Courses\TE2015 Microcontroladores\Laboratories\Lab06\Lab06.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"49
+"55
 } 0
-"51
+"57
 [v _send2LCD send2LCD `(v  1 e 1 0 ]
 {
 [v send2LCD@xy xy `uc  1 a 1 wreg ]
 [v send2LCD@xy xy `uc  1 a 1 wreg ]
 [v send2LCD@xy xy `uc  1 a 1 2 ]
-"60
+"66
 } 0
-"62
+"68
 [v _LCD_init LCD_init `(v  1 e 1 0 ]
 {
-"73
+"79
 } 0
-"91
+"97
 [v _LCD_cmd LCD_cmd `(v  1 e 1 0 ]
 {
 [v LCD_cmd@cx cx `uc  1 a 1 wreg ]
 [v LCD_cmd@cx cx `uc  1 a 1 wreg ]
-"93
+"99
 [v LCD_cmd@cx cx `uc  1 a 1 0 ]
-"100
+"106
 } 0

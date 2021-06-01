@@ -26,7 +26,13 @@ void LCD_cmd(char);
     
 void main(void) {
     OSCCON = 0x74;// Set the internal oscillator to 8MHz and stable
+    ANSELC = 0;   // Set port D as Digital for 7 segment anodes
+    TRISC  = 0x00;      // for Port D, set all pins as outputs for 7 segment anodes
+    ANSELD = 0;   // Set port D as Digital for 7 segment anodes
+    TRISD  = 0x00;      // for Port D, set all pins as outputs for 7 segment anodes
+    
     LCD_DATA_DIR = 0x00;
+    
     LCD_RS = 0;
     LCD_RW = 0;
     LCD_E  = 0;

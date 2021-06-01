@@ -8094,7 +8094,13 @@ void LCD_cmd(char);
 
 void main(void) {
     OSCCON = 0x74;
+    ANSELC = 0;
+    TRISC = 0x00;
+    ANSELD = 0;
     TRISD = 0x00;
+
+    TRISD = 0x00;
+
     LATCbits.LATC2 = 0;
     LATCbits.LATC1 = 0;
     LATCbits.LATC0 = 0;
