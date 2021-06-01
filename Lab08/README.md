@@ -80,8 +80,8 @@ A suggestion for the implementation of the traffic light system is to think on i
 </div>
 
 ### __Hardware implementation__
-4.	Connect the push button to RB2 pin. The clean signal (without debounce) will be output from the RB1 pin, so the RB1 must be connected to the RB0 pin to generate the INT0 interrupt. 
-5.	To simulate the traffic lights, connect the PORTD to the 8 LEDs of your ‘minimum card system’ as follows: RD7 and RD3 for pedestrian lights; RD6-green, RD5-yellow, RD4-red lights of North to South traffic; and RD2-green, RD1-yellow, RD0-red lights of West to East traffic. 
+1.	Connect the push button to RB2 pin. The clean signal (without debounce) will be output from the RB1 pin, so the RB1 must be connected to the RB0 pin to generate the INT0 interrupt. 
+2.	To simulate the traffic lights, connect the PORTD to the 8 LEDs of your ‘minimum card system’ as follows: RD7 and RD3 for pedestrian lights; RD6-green, RD5-yellow, RD4-red lights of North to South traffic; and RD2-green, RD1-yellow, RD0-red lights of West to East traffic. 
 
 ## Deliverables
 1. Turn in a technical report that includes worthwhile details about your lab work. Your report must be elaborated according to the Formal Lab Report Grading Rubric, thus is strongly suggested to review the rubric before submitting your report and make sure you include all the required information. Your report should include the following sections:
