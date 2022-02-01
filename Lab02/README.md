@@ -1,4 +1,4 @@
-# PARALLEL PORTS (GPIO)
+# Parallel Port (GPIO)
 ## Introduction
 Whack-a-mole is an arcade game in which players use a mallet to hit toy moles, which appear at random locations, to send they back down into their hiding holes. In this laboratory, you will develop the microcontroller firmware that runs the basic operational logic behind this game. Moreover, you will carry out experimental firmware testing to correct possible logic errors of your design, using development hardware, including the Curiosity board and additional components. 
 
