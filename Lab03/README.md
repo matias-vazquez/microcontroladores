@@ -9,7 +9,7 @@ Material | Quantity | Part number
 <a href="https://www.sparkfun.com/datasheets/LCD/HD44780.pdf" target="_blank">16×2 liquid crystal display</a> | 1 | ---
 <a href="https://www.ti.com/lit/ds/symlink/lm35.pdf" target="_blank">LM35 temperature sensor</a>  | 1 | LM35
 <a href="https://circuitdigest.com/microcontroller-projects/4x4-keypad-interfacing-with-pic16f877a" target="_blank">4×4 matrix keypad</a>    | 1 | ---
-Four-digit, common-cathode, 7-segment display          | 4 | 7SEG-MPX4-CC
+Four-digit, common-cathode, 7-segment display          | 1 | 7SEG-MPX4-CC
 Push-button                 | 8 | BUTTON
 LED                        | 8 | LED
 Resistor 4.7KΩ | 8  | MINRES4K7
