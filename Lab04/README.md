@@ -23,7 +23,7 @@ MPLAB X Integrated Development Environment (IDE) is an expandable, highly config
 
 ## Laboratory Work
 ### Install the MPLAB IDE
-1. Go to https://www.microchip.com/mplab/mplab-x-ide, scroll down to Donwloads section and download the latest version of MPLAB X IDE, then install it in your computer.
+1. Go to https://www.microchip.com/mplab/mplab-x-ide, scroll down to Downloads section and download the latest version of MPLAB X IDE, then install it in your computer.
 
 ### Create, Compile and Debug your First Program
 2. Connect the Curiosity board to your PC.
@@ -65,7 +65,7 @@ MPLAB X Integrated Development Environment (IDE) is an expandable, highly config
    <img src="img/fig6b.png">
 </div>
 
-9. Your code must be like the one showed in the figure 16, appended at the end of the document.
+9. Add comments to  `main()` and `portsInit()` functions explaining the purpose of each line.
 10. Download `device_config.h` C header file from the repository and save it on your project directory. 
 
 <div align="center">
@@ -123,6 +123,8 @@ MPLAB X Integrated Development Environment (IDE) is an expandable, highly config
 
 ## Deliverables
 Turn in a short technical report to document your work. Include the following:
+
+ - Upload your MPLAB project with the commented `main.c` to your GitHub repository and add the link to your technical report. 
  - Link to a video (2 minutes maximum), where you show and explain the functioning of your project on the Curiosity board. You can upload your video to your student drive or YouTube.
  - Image of the BUILD SUCCESSFUL window. 
  - Image of each modified register for the portInit() function when you debug the code step by step. __HINT: Put a breakpoint at the first line of the `portInit()` function and open the IO window (Window → Debugging → IO View).__
