@@ -1,3 +1,8 @@
+<div align="right">
+   <img src="img/teclogo.png">
+</div>
+
+
 # Introduction to MPLAB X IDE
 
 ## Objectives
@@ -22,7 +27,7 @@ MPLAB X Integrated Development Environment (IDE) is an expandable, highly config
 
 ### Create, Compile and Debug your First Program
 2. Connect the Curiosity board to your PC.
-3. Start MPLAB X IDE. Go to File -> New Project and select the *Microchip Embedded* and *Standalone Project* options. Then click *Next*.
+3. Start MPLAB X IDE. Go to *File -> New Project* and under *Categories*, select the *Microchip Embedded*; then, under *Projects* choose *Standalone Project*. Click *Next* to continue.
 
 <div align="center">
    <img src="img/fig1.png">
@@ -115,3 +120,8 @@ MPLAB X Integrated Development Environment (IDE) is an expandable, highly config
 
 19. Before start, activate the windows that let us to see what is happening inside your microcontroller. On this window you can select what you want to verify; for example, general purpose file registers (GPRs), Special file registers (SFRs), etc.
 20. Now debug the program by executing the code step-by-step. 
+
+## Deliverables
+Turn in a short technical report to document your work. Include the following:
+ - Image of the BUILD SUCCESSFUL window. 
+ - Image of each modified register for the portInit() function when you debug the code step by step. __HINT: Put a breakpoint at the first line of the `portInit()` function and open the IO window (Window → Debugging → IO View).__
