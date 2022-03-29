@@ -123,5 +123,6 @@ MPLAB X Integrated Development Environment (IDE) is an expandable, highly config
 
 ## Deliverables
 Turn in a short technical report to document your work. Include the following:
+ - Link to a video (2 minutes maximum), where you show and explain the functioning of your project on the Curiosity board. You can upload your video to your student drive or YouTube.
  - Image of the BUILD SUCCESSFUL window. 
  - Image of each modified register for the portInit() function when you debug the code step by step. __HINT: Put a breakpoint at the first line of the `portInit()` function and open the IO window (Window → Debugging → IO View).__
