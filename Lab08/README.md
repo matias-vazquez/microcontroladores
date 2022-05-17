@@ -1,4 +1,4 @@
-# Laboratory 7. Timers
+# Laboratory 8. Timers
 
 ## Objectives 
 The student will write a C program implementing the timer module to count events and time intervals. At the end of this lab, the student will be capable of: 
