@@ -1,4 +1,4 @@
-# Laboratory 8. Interrupts
+# Laboratory 9. Interrupts
 
 ## Objectives
 The student will write a C language program where he will use the interrupt service routine (ISR) for attendance core and peripheral hardware events.
